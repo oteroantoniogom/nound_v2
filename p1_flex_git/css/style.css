@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  background-color: linear-gradient(
+    rgb(156, 241, 169),
+    rgb(167, 194, 162),
+    rgb(170, 147, 153),
+    rgb(166, 97, 144),
+    rgb(157, 31, 134)
+  );
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aside, .article {
+    width: 100%;
+    min-width: 150px;
+    height: 150px;
+}
