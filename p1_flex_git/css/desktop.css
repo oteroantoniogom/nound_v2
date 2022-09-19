@@ -1,0 +1,21 @@
+  
+  .header {
+    width: 100%;
+    height: 10%;
+  }
+
+  .aside {
+    width: 25%;
+    height: auto;
+    left: 0%;
+    top:0%;
+  }
+
+  .article {
+    width: 75%;
+  }
+
+  .footer {
+    width: 100%;
+    height: 10%;
+  }
