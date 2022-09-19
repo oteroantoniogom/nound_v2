@@ -4,12 +4,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 0ch;
 }
 
 html {
   font-size: 62.5%;
   color: white;
-  font-family: 'Press Start 2P';
+  font-family: "Press Start 2P";
 }
 /*
 main {
@@ -31,7 +32,50 @@ main {
   background-color: rgb(156, 241, 169);
   width: 100%;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.logo-name{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #31244f;
+}
+
+.logo-name img {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 50%;
+  height: auto;
+}
+
+.logo {
+  margin-top: 20%;
+}
+
+.name {
+  width: 50%;
+  height: 100%;
+}
+
+.name img {
+  margin-top: 85%;
+}
+
+.login-signup {
+  width: 60%;
+}
+
+.login-signup div{
+  float:right;
+}
+
+
 
 .main {
   background-image: linear-gradient(
@@ -47,23 +91,36 @@ main {
 .aside {
   background-color: #31244f;
   width: 100%;
-  height: auto; 
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .aside div {
+  height: auto;
+  width: auto;
   margin: 1rem 0.5rem;
   text-align: center;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aside div div {
+  padding: 0%;
+  margin: 1rem 0.5rem;
+}
+
+.aside div img {
+  margin: 0%;
+  width: 2vw;
 }
 
 .aside div p {
   color: white;
   font-size: 1.55vw;
-  vertical-align: middle;
 }
 
 .article {
