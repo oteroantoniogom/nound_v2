@@ -111,16 +111,67 @@ html {
 /*------------------------------------------------------------------------------------------------*/
 /*-----------------------------CONTENIDO PRINCIPAL-------------------------------*/
 .article {
+  margin: 5%;
   width: 100%;
   height: auto;
 }
+
+.article-albums {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.article-titles {
+  font-size: 3.5vmin;
+  height: auto;
+  width: auto;
+}
+
+.album-type {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.album-type div {
+  padding: 2.5%;
+  width: auto;
+  max-height: 200px;
+  min-height: 100px;
+  text-align: center;
+}
+
+.article-albums img {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 50%;
+  transition: transform .2s;
+  background: rgba(0,0,0,.5);  
+}
+
+.article-albums img:hover {
+  transform: scale(1.1);
+  opacity: 70%;
+}
+
 /*------------------------------------------------------------------------------------------------*/
 /*-----------------------------PIE DE PAGINA-------------------------------*/
 .footer {
   background-color: rgb(157, 31, 134);
   width: 100%;
   height: auto;
+  font-size: 1rem;
+  padding: 2.5%;
+  text-align: center;
 }
+
+.footer p {
+  margin: 2%;
+}
+
 /*------------------------------------------------------------------------------------------------*/
 /*-----------------------------V1-------------------------------*/
 /*
