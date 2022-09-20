@@ -148,8 +148,8 @@ html {
   width: 20vmin;
   height: 20vmin;
   border-radius: 50%;
-  transition: transform .2s;
-  background: rgba(0,0,0,.5);  
+  transition: transform 0.2s;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .article-albums img:hover {
