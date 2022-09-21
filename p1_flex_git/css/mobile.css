@@ -23,9 +23,11 @@ html {
 .header {
   background-color: rgb(156, 241, 169);
   width: 100%;
-  height: 15%;
+  height: auto;
+  max-height: 100px;
   display: flex;
-  flex-wrap: wrap;
+  position: fixed;
+  z-index: 2;
 }
 
 .logo-name {
@@ -66,6 +68,7 @@ html {
 /*--------------------------------------------------CUERPO PRINCIPAL---------------------------------------------------------------*/
 
 .main {
+  position: absolute;
   background-image: linear-gradient(
     rgb(156, 241, 169),
     rgb(167, 194, 162),
@@ -75,6 +78,7 @@ html {
   );
   width: 100%;
   height: auto;
+  padding-bottom: 15%;
 }
 /*------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------BARRA LATERAL---------------------------------------------------------------*/
@@ -85,6 +89,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 15%;
 }
 
 .aside div {
@@ -166,10 +171,15 @@ html {
 .footer {
   background-color: rgb(157, 31, 134);
   width: 100%;
+  max-height: 15%;
   height: auto;
   font-size: 1rem;
   padding: 2.5%;
   text-align: center;
+  position: fixed;
+  bottom: 0%;
+  z-index: 2;
+  
 }
 
 .footer p {
