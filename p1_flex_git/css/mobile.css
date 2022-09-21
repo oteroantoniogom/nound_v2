@@ -125,7 +125,7 @@ html {
 /*------------------------------------------------------------------------------------------------*/
 /*-----------------------------CONTENIDO PRINCIPAL-------------------------------*/
 .article {
-  margin: 5%;
+  margin-top: 2.5%;
   width: 100%;
   height: auto;
 }
@@ -133,7 +133,6 @@ html {
 .article-albums {
   width: 100%;
   height: auto;
-  display: block;
 }
 
 .article-titles {
@@ -152,10 +151,10 @@ html {
 
 .album-type div {
   padding: 2.5%;
-  width: auto;
-  max-height: 200px;
-  min-height: 100px;
+  width: 20vh;
+  height: auto;
   text-align: center;
+  font-size: 0.90rem;
 }
 
 .article-albums img {
