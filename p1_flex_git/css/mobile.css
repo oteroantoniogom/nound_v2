@@ -57,6 +57,7 @@ html {
   width: 60%;
   height: auto;
   display: flex;
+  flex-wrap: nowrap;
   margin-left: 20%;
 }
 
