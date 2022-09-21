@@ -25,44 +25,48 @@ html {
   width: 100%;
   height: auto;
   max-height: 100px;
+  min-height: 30px;
   display: flex;
-  position: fixed;
+  flex-wrap: nowrap;
+  position:fixed;
   z-index: 2;
 }
 
 .logo-name {
-  width: auto;
-  height: 100%;
+  width: 40%;
+  height: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 #logo {
   width: 100%;
   height: auto;
   max-width: 80px;
+  min-height: 30px;
 }
 
 #name {
   width: 100%;
   height: auto;
   max-width: 80px;
+  min-height: 30px
 }
 
 .login-signup {
-  width: auto;
-  height: 100%;
-  max-height: 350px;
+  width: 60%;
+  height: auto;
   display: flex;
-  flex-wrap: wrap;
-  margin-left: auto;
+  margin-left: 20%;
 }
 
 .login-signup div {
-  margin: 2rem;
-  float: right;
+  margin: 10%;
 }
 
+.login-signup div a {
+  font-size: 2vw;
+}
 /*------------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------CUERPO PRINCIPAL---------------------------------------------------------------*/
