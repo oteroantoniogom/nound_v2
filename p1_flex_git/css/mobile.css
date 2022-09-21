@@ -28,7 +28,7 @@ html {
   min-height: 30px;
   display: flex;
   flex-wrap: nowrap;
-  position:fixed;
+  position: fixed;
   z-index: 2;
 }
 
@@ -50,7 +50,7 @@ html {
   width: 100%;
   height: auto;
   max-width: 80px;
-  min-height: 30px
+  min-height: 30px;
 }
 
 .login-signup {
@@ -128,6 +128,7 @@ html {
   margin-top: 2.5%;
   width: 100%;
   height: auto;
+  margin-bottom: 15%;
 }
 
 .article-albums {
@@ -154,7 +155,7 @@ html {
   width: 20vh;
   height: auto;
   text-align: center;
-  font-size: 0.90rem;
+  font-size: 0.9rem;
 }
 
 .article-albums img {
@@ -177,17 +178,16 @@ html {
   width: 100%;
   max-height: 15%;
   height: auto;
-  font-size: 1rem;
   padding: 2.5%;
   text-align: center;
   position: fixed;
   bottom: 0%;
   z-index: 2;
-  
 }
 
 .footer p {
   margin: 2%;
+  font-size: 1vh;
 }
 
 /*------------------------------------------------------------------------------------------------*/
