@@ -2,20 +2,37 @@
 
 .header {
   width: 100%;
-  height: 10%;
+  height: auto;
+  max-height: 100px;
+  min-height: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  position:fixed
 }
 
 .logo-name {
-  width: 70%;
+  width: 80%;
+  height: auto;
+}
+
+#logo {
+  max-width: 100px;
+}
+
+#name {
+  max-width: 100px;
 }
 
 .login-signup {
-  margin-left: 60%;
+  margin-left: 20%;
 }
 
+.login-signup div {
+  margin: 10%;
+}
 
 .login-signup div a {
-  font-size: 1vw;
+  font-size: 2vw;
 }
 
 /*------------------------------------------------------------------------------------------------*/
@@ -40,15 +57,20 @@
 .aside div {
   width: auto;
   margin: 1%;
+  margin-top: 50%;
 }
 
-.aside div p {
-  font-size: 1vw;
+.aside div a {
+  font-size: 2vw;
 }
 
 .aside-extra {
-  flex-wrap: nowrap;
-  padding-top: 85%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  top:60%;
+  left: 0%
 }
 
 
@@ -61,11 +83,13 @@
 }
 
 .article-titles {
+  margin-top: 10%;
   font-size: 2vw;
 }
 /*------------------------------------------------------------------------------------------------*/
 /*-----------------------------PIE DE PAGINA-------------------------------*/
 .footer p{
-  font-size: 1vw;
+  margin: 2%;
+  font-size: 2vw;
 }
 /*------------------------------------------------------------------------------------------------*/
