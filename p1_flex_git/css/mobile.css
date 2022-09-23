@@ -99,11 +99,8 @@ html {
 
 .aside div {
   height: auto;
-  width: auto;
   margin: 2rem 1.25rem;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .aside div div {
@@ -121,11 +118,12 @@ html {
   font-size: 1.55vw;
 }
 
-.aside-extra{
-  width: auto;
-  height: auto;
+.aside-extra {
   justify-content: center;
+  display: flex;
 }
+
+
 /*------------------------------------------------------------------------------------------------*/
 /*-----------------------------CONTENIDO PRINCIPAL-------------------------------*/
 .article {
@@ -133,6 +131,7 @@ html {
   width: 100%;
   height: auto;
   margin-bottom: 15%;
+  font-size: 1.5vw;
 }
 
 .article-albums {
@@ -141,7 +140,7 @@ html {
 }
 
 .article-titles {
-  font-size: 3.5vmin;
+  font-size: 3.5vw;
   height: auto;
   width: auto;
 }
@@ -159,12 +158,11 @@ html {
   width: 20vh;
   height: auto;
   text-align: center;
-  font-size: 2.25vw;
 }
 
 .article-albums img {
-  width: 20vmin;
-  height: 20vmin;
+  width: 15vmin;
+  height: 15vmin;
   border-radius: 50%;
   transition: transform 0.2s;
   background: rgba(0, 0, 0, 0.5);
