@@ -100,10 +100,8 @@ html {
 .aside div {
   height: auto;
   width: auto;
-  margin: 1rem 0.5rem;
+  margin: 2rem 1.25rem;
   text-align: center;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
   display: flex;
   flex-wrap: wrap;
 }
