@@ -58,6 +58,7 @@ html {
   height: auto;
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
   margin-left: 20%;
 }
 
@@ -73,7 +74,6 @@ html {
 /*--------------------------------------------------CUERPO PRINCIPAL---------------------------------------------------------------*/
 
 .main {
-  position: absolute;
   background-image: linear-gradient(
     rgb(156, 241, 169),
     rgb(167, 194, 162),
@@ -108,7 +108,7 @@ html {
   margin: 0.7rem;
 }
 
-.aside div div img {
+.aside div img {
   margin: 0%;
   width: 2vw;
 }

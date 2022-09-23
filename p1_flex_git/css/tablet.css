@@ -32,7 +32,7 @@
 }
 
 .login-signup div a {
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 /*------------------------------------------------------------------------------------------------*/
@@ -57,11 +57,11 @@
 .aside div {
   width: auto;
   margin: 1%;
-  margin-top: 50%;
+  margin-top: 40%;
 }
 
 .aside div a {
-  font-size: 2vw;
+  font-size: 1.4vw;
 }
 
 .aside-extra {
@@ -69,8 +69,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  top:60%;
-  left: 0%
+  top:50%;
+  left: 0%;
 }
 
 
