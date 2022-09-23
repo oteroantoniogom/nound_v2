@@ -82,15 +82,17 @@ html {
     rgb(157, 31, 134)
   );
   width: 100%;
-  height: auto;
+  height: 100vh;
   padding-bottom: 15%;
 }
 /*------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------BARRA LATERAL---------------------------------------------------------------*/
 .aside {
+  position: fixed;
   background-color: #31244f;
   width: 100%;
   height: auto;
+  max-height: 205px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -119,6 +121,14 @@ html {
   font-size: 1.55vw;
 }
 
+.aside div a:hover {
+  color: rgb(156, 241, 169);
+}
+
+.aside div a a:active {
+  color: #d217b6;
+}
+
 .aside-extra {
   justify-content: center;
   display: flex;
@@ -128,11 +138,11 @@ html {
 /*------------------------------------------------------------------------------------------------*/
 /*-----------------------------CONTENIDO PRINCIPAL-------------------------------*/
 .article {
-  margin-top: 2.5%;
   width: 100%;
   height: auto;
   margin-bottom: 15%;
   font-size: 1.5vw;
+  margin-top: 205px;
 }
 
 .article-albums {

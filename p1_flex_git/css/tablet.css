@@ -1,18 +1,12 @@
 /*--------------------------------------------------CABECERA---------------------------------------------------------------*/
 
 .header {
-  width: 100%;
-  height: auto;
   max-height: 100px;
   min-height: 40px;
-  display: flex;
-  flex-wrap: nowrap;
-  position:fixed
 }
 
 .logo-name {
   width: 80%;
-  height: auto;
 }
 
 #logo {
@@ -23,32 +17,22 @@
   max-width: 100px;
 }
 
-.login-signup {
-  margin-left: 20%;
-}
-
-.login-signup div {
-  margin: 10%;
-}
-
 .login-signup div a {
   font-size: 1vw;
 }
 
 /*------------------------------------------------------------------------------------------------*/
 .main {
-  width: 100%;
-  height: auto;
-  display: flex;
   padding-top: 7.5%;
   padding-bottom: 0%;
 }
 /*------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------BARRA LATERAL---------------------------------------------------------------*/
 .aside {
-  position: fixed;
+  position:fixed;
   width: 30%;
   height: 100%;
+  max-height: 100%;
   display: block;
   justify-content: center;
   padding: 5%;
@@ -66,9 +50,7 @@
 
 .aside-extra {
   position: absolute;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   top:50%;
   left: 0%;
 }
@@ -78,6 +60,7 @@
 /*-----------------------------CONTENIDO PRINCIPAL-------------------------------*/
 .article {
   width: 70%;
+  margin-top: 7.5vh;
   margin-left: 31%;
   font-size: 1vw;
 }
