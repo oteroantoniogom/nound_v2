@@ -9,17 +9,12 @@
     width: 40%;
   }
 
-  #logo {
-    max-width: 150px;
-    max-height: 155px;
-  }
-
-  #name {
+  #logo, #name {
     max-width: 150px;
     max-height: 145px;
   }
 
-  .login-signup div a {
+  #login a, #signup a {
     font-size: 1.5vw;
   }
 /*------------------------------------------------------------------------------------------------*/
@@ -34,12 +29,12 @@
     width: 25%;
   }
 
-  .aside div {
+  .opciones {
     margin: 7.5%;
     margin-top: 5%;
   }
 
-  .aside div a {
+  .opciones a {
     font-size: 1vw;
   }
 
@@ -64,7 +59,7 @@
     justify-content: left;
   }
 
-  .album-type div {
+  .song {
     margin: 1.75%;
   }
 /*------------------------------------------------------------------------------------------------*/

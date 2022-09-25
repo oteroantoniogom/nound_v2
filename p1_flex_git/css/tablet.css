@@ -9,15 +9,11 @@
   width: 80%;
 }
 
-#logo {
+#logo, #name {
   max-width: 100px;
 }
 
-#name {
-  max-width: 100px;
-}
-
-.login-signup div a {
+#login a, #signup a {
   font-size: 1vw;
 }
 
@@ -38,13 +34,13 @@
   padding: 5%;
 }
 
-.aside div {
+.opciones {
   width: auto;
   margin: 1%;
   margin-top: 40%;
 }
 
-.aside div a {
+.opciones a {
   font-size: 1.4vw;
 }
 
