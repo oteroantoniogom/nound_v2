@@ -69,23 +69,23 @@ html {
 .login-signup div a {
   font-size: 2vw;
 }
+
 /*------------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------CUERPO PRINCIPAL---------------------------------------------------------------*/
 
 .main {
-  background-image: linear-gradient(
-    rgb(156, 241, 169),
-    rgb(167, 194, 162),
-    rgb(170, 147, 153),
-    rgb(166, 97, 144),
-    rgb(157, 31, 134)
-  );
+  background-image: linear-gradient(rgb(156, 241, 169),
+      rgb(167, 194, 162),
+      rgb(170, 147, 153),
+      rgb(166, 97, 144),
+      rgb(157, 31, 134));
   width: 100%;
   height: auto;
   padding-bottom: 10%;
   overflow-x: hidden;
 }
+
 /*------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------BARRA LATERAL---------------------------------------------------------------*/
 .aside {
@@ -181,7 +181,7 @@ html {
   top: 0%;
   left: 0%;
   z-index: 1;
-  opacity: 0%; 
+  opacity: 0%;
   transition: transform 0.2s;
 }
 
@@ -192,7 +192,6 @@ html {
   z-index: 2;
 }
 
-
 .article-albums img {
   width: 15vmin;
   height: 15vmin;
@@ -200,18 +199,17 @@ html {
   border: 2px solid white;
 }
 
-
-
 /*------------------------------------------------------------------------------------------------*/
 /*-----------------------------PIE DE PAGINA-------------------------------*/
 .footer {
+  position: fixed;
   background-color: rgb(157, 31, 134);
   width: 100%;
   max-height: 15%;
   height: auto;
   padding: 2.5%;
   text-align: center;
-  position: fixed;
+
   bottom: 0%;
   z-index: 2;
 }
@@ -220,58 +218,3 @@ html {
   margin: 2%;
   font-size: 2vw;
 }
-
-/*------------------------------------------------------------------------------------------------*/
-/*-----------------------------V1-------------------------------*/
-/*
-#header-main {
-  position: fixed;
-  z-index: 2;
-  background: rgb(156, 241, 169);
-  width: 100%;
-  margin-left: 25%;
-  height: 10%;
-}
-*/
-/*-----------------------------PIE DE PAGINA-------------------------------*/
-/*
-#footer-main {
-  z-index: 2;
-  background: rgb(157, 31, 134);
-  color: white;
-  font-size: 1.75vmin;
-  position: fixed;
-  display: block;
-  text-align: center;
-  width: 100%;
-  height: 10%;
-  bottom: 0%;
-}
-
-.footer-main-div {
-  list-style: none;
-  padding-left: 10%;
-}
-
-.footer-main-div_item {
-  display: inline-block;
-}
-
-.footer-main-div_item a {
-  color: white;
-  padding: 0%;
-  text-decoration: none;
-}
-
-.footer-main-div_item a:hover {
-  color: rgb(156, 241, 169);
-}
-
-.footer-main-div_item a:active {
-  color: #d217b6;
-}
-
-.footer-main-div_item a::after {
-  content: " | ";
-}
-*/
