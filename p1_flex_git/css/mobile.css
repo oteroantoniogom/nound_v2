@@ -172,6 +172,12 @@ html {
   text-align: center;
 }
 
+.album-type div audio {
+  position: relative;
+  width: 130%;
+  height: 30%;
+}
+
 .article-albums img {
   width: 15vmin;
   height: 15vmin;
