@@ -39,14 +39,7 @@ html {
   flex-wrap: nowrap;
 }
 
-#logo {
-  width: 100%;
-  height: auto;
-  max-width: 80px;
-  min-height: 30px;
-}
-
-#name {
+#logo, #name{
   width: 100%;
   height: auto;
   max-width: 80px;
@@ -62,11 +55,11 @@ html {
   margin-left: 20%;
 }
 
-.login-signup div {
+#login, #signup {
   margin: 10%;
 }
 
-.login-signup div a {
+#login a, #signup a {
   font-size: 2vw;
 }
 
@@ -101,33 +94,33 @@ html {
   z-index: 2;
 }
 
-.aside div {
+.opciones {
   height: auto;
   margin: 2rem 1.25rem;
   text-align: center;
 }
 
-.aside div div {
+.opciones div {
   padding: 0%;
   margin: 0.7rem;
 }
 
-.aside div img {
+.opciones img, .aside-extra img {
   margin: 0%;
   width: 2vw;
 }
 
-.aside div a {
+.opciones a, .aside-extra a{
   color: white;
   text-decoration: none;
   font-size: 1.55vw;
 }
 
-.aside div a:hover {
+.opciones a:hover, .aside-extra a:hover {
   color: rgb(156, 241, 169);
 }
 
-.aside div a a:active {
+.opciones a:active, .aside-extra a:active {
   color: #d217b6;
 }
 
@@ -166,7 +159,7 @@ html {
   justify-content: center;
 }
 
-.album-type div {
+.song {
   position: relative;
   padding: 2.5%;
   width: 20vh;
@@ -174,10 +167,10 @@ html {
   text-align: center;
 }
 
-.album-type div audio {
+.song audio {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   top: 0%;
   left: 0%;
   z-index: 1;
@@ -185,7 +178,7 @@ html {
   transition: transform 0.2s;
 }
 
-.album-type div audio:hover {
+.song audio:hover {
   opacity: 80%;
   border: 3px dashed #31244f;
   transform: scale(1.1);
