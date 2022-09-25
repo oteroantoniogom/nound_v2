@@ -94,18 +94,14 @@ html {
   z-index: 2;
 }
 
-.opciones {
+
+.opciones, .aside-extra div{
   height: auto;
   margin: 2rem 1.25rem;
   text-align: center;
 }
 
-.opciones div {
-  padding: 0%;
-  margin: 0.7rem;
-}
-
-.opciones img, .aside-extra img {
+.aside img {
   margin: 0%;
   width: 2vw;
 }
