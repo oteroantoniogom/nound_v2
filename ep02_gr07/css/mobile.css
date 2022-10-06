@@ -1,0 +1,209 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0ch;
+}
+
+html {
+  font-size: 62.5%;
+  color: white;
+  font-family: "Press Start 2P";
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*--------------------------------------------------CABECERA---------------------------------------------------------------*/
+
+.header {
+  background-color: rgb(156, 241, 169);
+  width: 100%;
+  height: auto;
+  max-height: 70px;
+  min-height: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: fixed;
+  z-index: 3;
+}
+
+.logo-name {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#logo, #name{
+  width: 100%;
+  height: auto;
+  max-width: 80px;
+  min-height: 30px;
+}
+
+.login-signup {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: 20%;
+}
+
+#login, #signup {
+  margin: 10%;
+}
+
+#login a, #signup a {
+  font-size: 2vw;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------CUERPO PRINCIPAL---------------------------------------------------------------*/
+
+.main {
+  background-image: linear-gradient(rgb(156, 241, 169),
+      rgb(167, 194, 162),
+      rgb(170, 147, 153),
+      rgb(166, 97, 144),
+      rgb(157, 31, 134));
+  width: 100%;
+  height: auto;
+  padding-bottom: 10%;
+  overflow-x: hidden;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------BARRA LATERAL---------------------------------------------------------------*/
+.aside {
+  position: fixed;
+  background-color: #31244f;
+  width: 100%;
+  height: auto;
+  max-height: 205px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 15%;
+  z-index: 2;
+}
+
+
+.opciones, .aside-extra div{
+  height: auto;
+  margin: 2rem 1.25rem;
+  text-align: center;
+}
+
+.aside img {
+  margin: 0%;
+  width: 2vw;
+}
+
+.opciones a, .aside-extra a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.55vw;
+}
+
+.opciones a:hover, .aside-extra a:hover {
+  color: rgb(156, 241, 169);
+}
+
+.opciones a:active, .aside-extra a:active {
+  color: #d217b6;
+}
+
+.aside-extra {
+  justify-content: center;
+  display: flex;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*-----------------------------CONTENIDO PRINCIPAL-------------------------------*/
+.article {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30%;
+  font-size: 1.5vw;
+  margin-top: 205px;
+}
+
+.article-albums {
+  width: 100%;
+  height: auto;
+}
+
+.article-titles {
+  margin-top: 5%;
+  font-size: 3.5vw;
+  height: auto;
+  width: auto;
+}
+
+.album-type {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.song {
+  position: relative;
+  padding: 2.5%;
+  width: 20vh;
+  height: auto;
+  text-align: center;
+}
+
+.song audio {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  opacity: 0%;
+  transition: transform 0.2s;
+}
+
+.song audio:hover {
+  opacity: 80%;
+  border: 3px dashed #31244f;
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.article-albums img {
+  width: 15vmin;
+  height: 15vmin;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*-----------------------------PIE DE PAGINA-------------------------------*/
+.footer {
+  position: fixed;
+  background-color: rgb(157, 31, 134);
+  width: 100%;
+  max-height: 15%;
+  height: auto;
+  padding: 2.5%;
+  text-align: center;
+
+  bottom: 0%;
+  z-index: 2;
+}
+
+.footer p {
+  margin: 2%;
+  font-size: 2vw;
+}
