@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0ch;
+}
+
+html {
+  font-size: 62.5%;
+  color: white;
+  font-family: "Press Start 2P";
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*--CABECERA--*/
+
+.header {
+  background-color: rgb(156, 241, 169);
+  width: 100%;
+  height: auto;
+  max-height: 70px;
+  min-height: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: fixed;
+  z-index: 3;
+}
+
+.logo-name {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#logo, #name {
+  width: 100%;
+  height: auto;
+  max-width: 80px;
+  min-height: 30px;
+}
+
+/*--CUERPO PRINCIPAL--*/
+
+.main {
+  background-image: linear-gradient(
+    rgb(156, 241, 169),
+    rgb(167, 194, 162),
+    rgb(170, 147, 153),
+    rgb(166, 97, 144),
+    rgb(157, 31, 134)
+  );
+  width: 100%;
+  height: auto;
+  padding-bottom: 10%;
+  overflow-x: hidden;
+}
+
+/*--BARRA LATERAL--*/
+
+.aside {
+  position: fixed;
+  background-color: #31244f;
+  width: 100%;
+  height: auto;
+  max-height: 205px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 15%;
+  z-index: 2;
+}
+
+.opciones, .aside-extra div {
+  height: auto;
+  margin: 2rem 1.25rem;
+  text-align: center;
+}
+
+.aside img {
+  margin: 0%;
+  width: 2vw;
+}
+
+.opciones a, .aside-extra a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.55vw;
+}
+
+.opciones a:hover, .aside-extra a:hover {
+  color: rgb(156, 241, 169);
+}
+
+.opciones a:active, .aside-extra a:active {
+  color: #d217b6;
+}
+
+.aside-extra {
+  justify-content: center;
+  display: flex;
+}
+
+/*--CONTENIDO PRINCIPAL--*/
+.article {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30%;
+  font-size: 1.5vw;
+  margin-top: 205px;
+}
