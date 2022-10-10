@@ -53,7 +53,9 @@ html {
   max-width: 80px;
   min-height: 30px;
 }
-
+.container {
+  height: 100vh;
+}
 /*--CUERPO PRINCIPAL--*/
 
 .main {
@@ -65,7 +67,7 @@ html {
     rgb(157, 31, 134)
   );
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding-bottom: 0%;
   overflow-x: hidden;
   padding-top: 5%;
@@ -125,14 +127,14 @@ html {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 5%;
-  padding-bottom: 5%;
   font-size: 3vw;
+  text-align: center;
   
 }
 
 input[type=text], input[type=password] {
-  width: 100%;
-  padding: 3% 5%;
+  width: 70%;
+  padding: 2% 5%;
   margin: 3% 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -141,9 +143,10 @@ input[type=text], input[type=password] {
 }
 
 button {
+  width: 60%;
   background-color: #31244f;
   color: white;
-  padding: 5% 20px;
+  padding: 3% 20px;
   margin: 3% 0;
   border: none;
   cursor: pointer;
@@ -160,22 +163,4 @@ button[type=submit_facebook] {
 }
 button:hover {
   opacity: 0.7;
-}
-
-.footer {
-  position: fixed;
-  background-color: rgb(157, 31, 134);
-  width: 100%;
-  max-height: 15%;
-  height: auto;
-  padding: 2.5%;
-  text-align: center;
-
-  bottom: 0%;
-  z-index: 2;
-}
-
-.footer p {
-  margin: 2%;
-  font-size: 2vw;
 }
