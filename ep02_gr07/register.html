@@ -4,10 +4,7 @@
     <!--Hace que el navegador entienda caracteres especiales, como la ñ o los acentos-->
     <meta charset="UTF-8" />
     <!--Descripción de la página-->
-    <meta
-      name="description"
-      content="Registro de nueva cuenta"
-    />
+    <meta name="description" content="Registro de nueva cuenta" />
     <!--Hace que los robots de SEO de Google coloquen nuestra página; es decir, posicionarla-->
     <meta name="robots" content="index,follow" />
 
@@ -30,100 +27,126 @@
       media="screen and (min-width: 769px)"
     />
     <body class="container">
+      <!--CABECERA-->
 
-        <!--CABECERA-->
+      <header class="header">
+        <div class="logo-name">
+          <div>
+            <img id="logo" src="./images/nound_logo.png" alt="logo" />
+          </div>
+          <div>
+            <img id="name" src="./images/nound_name.png" alt="nombre" />
+          </div>
+        </div>
+      </header>
 
-        <header class="header">
-            <div class="logo-name">
-                <div>
-                    <img id="logo" src="./images/nound_logo.png" alt="logo" />
-                </div>
-                <div>
-                    <img id="name" src="./images/nound_name.png" alt="nombre" />
-                </div>
+      <!--CUERPO PRINCIPAL-->
+
+      <main class="main">
+        <!--BARRA LATERAL-->
+
+        <aside class="aside">
+          <div class="opciones">
+            <img src="./images/house-64.png" alt="logo_inicio" />
+            <a href="#">Inicio</a>
+          </div>
+          <div class="opciones">
+            <img src="./images/zoom-64.png" alt="logo_buscar" />
+            <a href="#">Buscar</a>
+          </div>
+          <div class="opciones">
+            <img src="./images/book-stack-64.png" alt="logo_biblioteca" />
+            <a href="#">Biblioteca</a>
+          </div>
+          <div class="opciones">
+            <img src="./images/binoculars-64.png" alt="logo_explorar" />
+            <a href="#">Explorar</a>
+          </div>
+          <div class="opciones">
+            <img src="./images/cog-64.png" alt="logo_confi" />
+            <a href="#">Menu</a>
+          </div>
+          <div class="aside-extra">
+            <div>
+              <img src="./images/lock-7-64.png" alt="logo_privacidad" />
+              <a href="#">Privacidad</a>
             </div>
-        </header>
+            <div>
+              <img src="./images/warning-3-64.png" alt="logo_cookies" />
+              <a href="#">Cookies</a>
+            </div>
+          </div>
+        </aside>
 
-        <!--CUERPO PRINCIPAL-->
+        <!--CONTENIDO PRINCIPAL-->
+        <article class="article">
+          <div clas="container">
+            <form>
+              <button type="submit_google">Registrarse con Google</button>
+              <button type="submit_facebook">Registrarse con Facebook</button>
 
-        <main class="main">
-        
-            <!--BARRA LATERAL-->
+              <p>Informacion de la cuenta</p>
 
-            <aside class="aside">
-                <div class="opciones">
-                    <img src="./images/house-64.png" alt="logo_inicio" />
-                    <a href="#">Inicio</a>
-                </div>
-                <div class="opciones">
-                    <img src="./images/zoom-64.png" alt="logo_buscar" />
-                    <a href="#">Buscar</a>
-                </div>
-                <div class="opciones">
-                    <img src="./images/book-stack-64.png" alt="logo_biblioteca" />
-                    <a href="#">Biblioteca</a>
-                </div>
-                <div class="opciones">
-                    <img src="./images/binoculars-64.png" alt="logo_explorar" />
-                    <a href="#">Explorar</a>
-                </div>
-                    <div class="opciones">
-                    <img src="./images/cog-64.png" alt="logo_confi" />
-                <a href="#">Menu</a>
-                </div>
-                <div class="aside-extra">
-                    <div>
-                        <img src="./images/lock-7-64.png" alt="logo_privacidad" />
-                        <a href="#">Privacidad</a>
-                    </div>
-                    <div>
-                        <img src="./images/warning-3-64.png" alt="logo_cookies" />
-                        <a href="#">Cookies</a>
-                    </div>
-                </div>
-            </aside>
+              <label for="uname"><b>Nombre de usuario*</b></label>
+              <input
+                type="text"
+                placeholder="Nombre de usuario"
+                name="uname"
+                required
+              />
 
-            <!--CONTENIDO PRINCIPAL-->
-            <article class="article">
-                <div clas="container">
-                    <button type="submit_google">Registrarse con Google</button>
-                    <button type="submit_facebook">Registrarse con Facebook</button>
+              <label for="psw"><b>Contraseña*</b></label>
+              <input
+                type="password"
+                placeholder="Contraseña"
+                name="psw"
+                required
+              />
 
-                    <p>Informacion de la cuenta</p>
+              <p>Informacion personal</p>
 
-                    <label for="uname"><b>Nombre de usuario*</b></label>
-                    <input type="text" placeholder="Nombre de usuario" name="uname" required>
-            
-                    <label for="psw"><b>Contraseña*</b></label>
-                    <input type="password" placeholder="Contraseña" name="psw" required>
+              <label for="name"><b>Nombre*</b></label>
+              <input type="text" placeholder="Nombre" name="name" required />
 
-                    <p>Informacion personal</p>
+              <label for="surname"><b>Apellidos*</b></label>
+              <input
+                type="text"
+                placeholder="Apellidos"
+                name="surname"
+                required
+              />
 
-                    <label for="name"><b>Nombre*</b></label>
-                    <input type="text" placeholder="Nombre" name="name" required>
+              <label for="email"><b>Email*</b></label>
+              <input type="email" placeholder="Email" name="email" required />
 
-                    <label for="surname"><b>Apellidos*</b></label>
-                    <input type="text" placeholder="Apellidos" name="surname" required>
+              <label for="birthday"><b>Fecha de nacimiento*</b></label>
+              <input
+                type="date"
+                placeholder="dd/mm/aaaa"
+                name="birthday"
+                required
+              />
 
-                    <label for="email"><b>Email*</b></label>
-                    <input type="text" placeholder="Email" name="email" required>
+              <label for="pfp"><b>Foto de perfil</b></label>
+              <input
+                type="file"
+                accept="image/*"
+                placeholder="Foto de perfil"
+              />
 
-                    <label for="birthday"><b>Fecha de nacimiento*</b></label>
-                    <input type="date" placeholder="dd/mm/aaaa" name="birthday" required>
+              <label>
+                <input type="checkbox" name="remember" /> He leido y acepto las
+                condiciones de uso*
+              </label>
 
-                    <label for="pfp"><b>Foto de perfil</b></label>
-                    <input type="image" placeholder="Foto de perfil" >
+              <button type="submit">Registrarse</button>
+              <button type="erase">Cancelar</button>
 
-                    <label>
-                        <input type="checkbox" name="remember"> He leido y acepto las condiciones de uso*
-                    </label>
-            
-                    <button type="submit">Registrarse</button>
-                    <button type="erase">Cancelar</button>
-
-                    <p id="reminder">* Campos obligatorios</p>
-                </div>
-            </article>
-        </main>
+              <p id="reminder">* Campos obligatorios</p>
+            </form>
+          </div>
+        </article>
+      </main>
     </body>
+  </head>
 </html>

@@ -129,7 +129,7 @@ html {
     text-align: left;
 }
 
-input[type=text], input[type=password], input[type=date], input[type=image] {
+input[type=text], input[type=password], input[type=date], input[type=image], input[type=email], input[type=file] {
     width: 100%;
     padding: 3% 5%;
     margin: 4% 0;
