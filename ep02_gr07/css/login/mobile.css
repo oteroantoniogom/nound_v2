@@ -60,6 +60,7 @@ html {
   height: auto;
   padding-bottom: 10%;
   overflow-x: hidden;
+  margin-top: 3%;
 }
 
 /*--BARRA LATERAL--*/
@@ -112,6 +113,40 @@ html {
   width: 100%;
   height: auto;
   margin-bottom: 30%;
-  font-size: 1.5vw;
   margin-top: 205px;
+  padding: 5% 20%;
+  font-size: 3vw;
+  
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 3% 5%;
+  margin: 3% 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+button {
+  background-color: #31244f;
+  color: white;
+  padding: 5% 20px;
+  margin: 3% 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 100%;
+}
+
+button[type=submit_google] {
+  background-color: red;
+}
+
+button[type=submit_facebook] {
+  background-color: blue;
+}
+button:hover {
+  opacity: 0.7;
 }
