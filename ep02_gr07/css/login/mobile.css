@@ -11,12 +11,20 @@ html {
   font-size: 62.5%;
   color: white;
   font-family: "Press Start 2P";
+  background-image: linear-gradient(
+    rgb(156, 241, 169),
+    rgb(167, 194, 162),
+    rgb(170, 147, 153),
+    rgb(166, 97, 144),
+    rgb(157, 31, 134)
+  );
 }
 
 .container_form {
   display: flex;
   flex-wrap: wrap;
 }
+
 
 /*--CABECERA--*/
 
@@ -57,10 +65,10 @@ html {
     rgb(157, 31, 134)
   );
   width: 100%;
-  height: auto;
-  padding-bottom: 10%;
+  height: 100%;
+  padding-bottom: 0%;
   overflow-x: hidden;
-  margin-top: 3%;
+  padding-top: 5%;
 }
 
 /*--BARRA LATERAL--*/
@@ -114,7 +122,10 @@ html {
   height: auto;
   margin-bottom: 30%;
   margin-top: 205px;
-  padding: 5% 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   font-size: 3vw;
   
 }
@@ -149,4 +160,22 @@ button[type=submit_facebook] {
 }
 button:hover {
   opacity: 0.7;
+}
+
+.footer {
+  position: fixed;
+  background-color: rgb(157, 31, 134);
+  width: 100%;
+  max-height: 15%;
+  height: auto;
+  padding: 2.5%;
+  text-align: center;
+
+  bottom: 0%;
+  z-index: 2;
+}
+
+.footer p {
+  margin: 2%;
+  font-size: 2vw;
 }
