@@ -1,0 +1,54 @@
+   /*--CABECERA--*/
+   .header {
+    max-height: 135px;
+    min-height: 50px;
+  }
+
+  .logo-name {
+    width: 40%;
+  }
+
+  #logo, #name {
+    max-width: 150px;
+    max-height: 145px;
+  }
+
+  #login a, #signup a {
+    font-size: 1.5vw;
+  }
+
+  /*--CUERPO PRINCIPAL--*/
+
+  .main {
+    margin-top: 110px;
+    padding-top: 0;
+    padding-bottom: 10%;
+  }
+
+/*--BARRA LATERAL--*/
+
+  .aside {
+    padding: 2%;
+    width: 25%;
+  }
+
+  .opciones {
+    margin: 7.5%;
+    margin-top: 5%;
+  }
+
+  .opciones a {
+    font-size: 1vw;
+  }
+
+  .aside-extra {
+    top:50%;
+  } 
+
+/*--CONTENIDO PRINCIPAL--*/
+  .article {
+    width: 75%;
+    margin-left: 25%;
+    height: auto;
+    margin-bottom: 0%;
+  }
