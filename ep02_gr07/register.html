@@ -29,6 +29,8 @@
   </head>
 
   <body class="container">
+    <script src="./js/cookies.js"></script>
+
     <!--CABECERA-->
 
     <header class="header">
@@ -98,6 +100,8 @@
               type="text"
               placeholder="Nombre de usuario"
               name="uname"
+              id="uname"
+              
               required
             />
 
@@ -106,19 +110,21 @@
               type="password"
               placeholder="Contraseña"
               name="psw"
+              id="psw"
               required
             />
 
             <p>Informacion personal</p>
 
             <label for="name"><b>Nombre*</b></label>
-            <input type="text" placeholder="Nombre" name="name" required />
+            <input type="text" placeholder="Nombre" name="name" id="name" required />
 
             <label for="surname"><b>Apellidos*</b></label>
             <input
               type="text"
               placeholder="Apellidos"
               name="surname"
+              id="surname"
               required
             />
 
@@ -130,18 +136,19 @@
               type="date"
               placeholder="dd/mm/aaaa"
               name="birthday"
+              id="birthday"
               required
             />
 
             <label for="pfp"><b>Foto de perfil</b></label>
-            <input type="file" accept="image/*" placeholder="Foto de perfil" />
+            <input type="file" accept="image/*" placeholder="Foto de perfil" id="picture"/>
 
             <label>
               <input type="checkbox" name="remember" /> He leido y acepto las
               condiciones de uso*
             </label>
 
-            <button type="submit">Registrarse</button>
+            <button type="submit" id="submit" onclick=checkCookie()>Registrarse</button>
             <button type="erase">Cancelar</button>
 
             <p id="reminder">* Campos obligatorios</p>

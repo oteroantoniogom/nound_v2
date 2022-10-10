@@ -27,7 +27,10 @@
       media="screen and (min-width: 769px)"
     />
   </head>
-  <body class="container">
+  <body class="container"">
+
+    <script src="./js/cookies.js"></script>
+
     <!--CABECERA-->
 
     <header class="header">
@@ -92,6 +95,7 @@
               type="text"
               placeholder="Nombre de usuario"
               name="uname"
+              id="uname"
               required
             />
 
@@ -100,10 +104,11 @@
               type="password"
               placeholder="Contraseña"
               name="psw"
+              id="psw"
               required
             />
 
-            <button type="submit">Iniciar sesion</button>
+            <button type="submit" onclick=checkCookie()>Iniciar sesion</button>
             <button type="submit_google">Iniciar sesion con Google</button>
             <button type="submit_facebook">Iniciar sesion con Facebook</button>
           </form>
