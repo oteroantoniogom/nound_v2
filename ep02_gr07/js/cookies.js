@@ -1,5 +1,5 @@
-var uname = document.getElementById("uname");
-var psw = document.getElementById("psw");
+var uname = document.getElementById("uname").value;
+var psw = document.getElementById("psw").value;
 console.log(uname);
 
 
