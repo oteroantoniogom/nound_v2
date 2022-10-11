@@ -1,4 +1,10 @@
 uname = document.getElementById("uname");
+psw = document.getElementById("psw");
+pname = document.getElementById("name");
+surname = document.getElementById("surname");
+email = document.getElementById("email");
+birthday = document.getElementById("birthday");
+checkbox = document.getElementById("checkbox");
 
 function setCookie(cname,cvalue,exdays) {
   const d = new Date();
@@ -25,12 +31,16 @@ function getCookie(cname) {
 
 function checkCookie() {
   let user = getCookie("username");
+  switch (checking) {
+    case 'name':
+      
+  }
   if (user == uname.value) {
-    alert("Welcome again " + user);
+    alert("El nombre de usuario " + user + "ya existe.");
   } else {
      user = uname.value;
      if (user != "" && user != null) {
-       setCookie("username", user, 30);
+       setCookie("username", user, 365);
      }
   }
 }
