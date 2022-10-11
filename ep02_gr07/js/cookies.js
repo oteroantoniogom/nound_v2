@@ -1,22 +1,19 @@
-var uname = document.getElementById("uname").value;
-var psw = document.getElementById("psw").value;
-console.log(uname);
+uname = document.getElementById("uname");
 
-
-function setCookie(uname, cvalue, exdays) {
+function setCookie(cname,cvalue,exdays) {
   const d = new Date();
-  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
   let expires = "expires=" + d.toUTCString();
-  document.cookie = uname + "=" + cvalue + ";" + expires + ";path=/";
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-function getCookie(uname) {
-  let name = uname + "=";
+function getCookie(cname) {
+  let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(";");
-  for (let i = 0; i < ca.length; i++) {
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
     let c = ca[i];
-    while (c.charAt(0) == " ") {
+    while (c.charAt(0) == ' ') {
       c = c.substring(1);
     }
     if (c.indexOf(name) == 0) {
@@ -27,12 +24,13 @@ function getCookie(uname) {
 }
 
 function checkCookie() {
-  let user = getCookie("");
-  if (user == "") {
-    alert("El nombre de usuario " + user + " ya está registrado");
+  let user = getCookie("username");
+  if (user == uname.value) {
+    alert("Welcome again " + user);
   } else {
-    if (user != "" && user != null) {
-      setCookie("username", uname, 30);
-    }
+     user = uname.value;
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
   }
 }
