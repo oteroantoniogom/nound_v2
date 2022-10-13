@@ -31,10 +31,6 @@ function getCookie(cname) {
 
 function checkCookie() {
   let user = getCookie("username");
-  switch (checking) {
-    case 'name':
-      
-  }
   if (user == uname.value) {
     alert("El nombre de usuario " + user + "ya existe.");
   } else {
@@ -43,4 +39,8 @@ function checkCookie() {
        setCookie("username", user, 365);
      }
   }
+}
+
+function cancelRegister() {
+  document.getElementById("formRegister").reset();
 }
