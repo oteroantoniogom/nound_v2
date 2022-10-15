@@ -52,17 +52,69 @@ html {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  margin-left: 20%;
+  margin-left: 15%;
+  display: none;
 }
 
 #login, #signup {
-  margin: 10%;
+  margin: 5%;
 }
 
 #login a, #signup a {
-  font-size: 2vw;
+  font-size: 1.75vw;
   text-decoration: none;
   color: #31244f;
+}
+
+.pfp-menu{
+  width: 100%;
+  height: auto;
+  max-height: 70px;
+  align-items: center;
+  margin-left: 50%;
+}
+
+#pfp-image {
+  width: 35%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #31244f;
+  opacity: 1;
+  margin-left: 60%;
+}
+
+.collapsible {
+  position: absolute;
+  top: 4%;
+  right: 0%;
+  cursor: pointer;
+  padding: 4% 3%;
+  opacity: 0;
+}
+
+.pmenu{
+  width: 90%;
+  text-align: center;
+  display: none;
+  overflow: hidden;
+  background-color: rgb(157, 31, 134);
+  z-index: 4;
+}
+
+.pmenu-opciones{
+  height: auto;
+  padding: 2% 2%;
+  text-align: center;
+}
+
+.pmenu-opciones a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.55vw;
+}
+.pmenu img {
+  margin: 0%;
+  width: 2vw;
 }
 
 /*--CUERPO PRINCIPAL--*/
@@ -81,7 +133,7 @@ html {
 
 /*--BARRA LATERAL--*/
 .aside {
-  position: fixed;
+  position: absolute;
   background-color: #31244f;
   width: 100%;
   height: auto;
@@ -92,7 +144,6 @@ html {
   padding-top: 15%;
   z-index: 2;
 }
-
 
 .opciones, .aside-extra div{
   height: auto;

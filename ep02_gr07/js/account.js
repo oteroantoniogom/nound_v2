@@ -66,3 +66,33 @@ function checkCookie() {
 function cancelRegister() {
   document.getElementById("formRegister").reset();
 }
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+/*var x = 0;
+var pfp = document.getElementsByClassName("pfp-menu");
+var login = document.getElementsByClassName("login-signup");
+
+function myFunction() {
+  document.getElementsByClassName("pfp-menu").style.display ="none";
+}
+
+
+if (x == 1) {
+  pfp.style.display ="none";
+}  else {
+  login.style.display = "none";
+}*/
