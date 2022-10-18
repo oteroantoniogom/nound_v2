@@ -6,7 +6,7 @@
 }
 
 .logo-name {
-  width: 80%;
+  width: 100%;
 }
 
 #logo, #name {
@@ -17,6 +17,10 @@
   font-size: 1vw;
 }
 
+.pfp-menu {
+  max-height: 100px;
+  min-height: 40px;
+}
 
 /*--CUERPO PRINCIPAL--*/
 
