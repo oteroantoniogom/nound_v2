@@ -93,27 +93,24 @@ html {
 }
 
 .pmenu{
+  position: absolute;
   width: 90%;
-  text-align: center;
-  display: none;
   overflow: hidden;
   background-color: rgb(157, 31, 134);
-  z-index: 4;
 }
 
 .pmenu-opciones{
   height: auto;
-  padding: 2% 2%;
-  text-align: center;
+  padding: 1% 1%;
+  text-align: left;
 }
 
 .pmenu-opciones a {
   color: white;
   text-decoration: none;
-  font-size: 1.55vw;
+  font-size: 1.3vw;
 }
 .pmenu img {
-  margin: 0%;
   width: 2vw;
 }
 
