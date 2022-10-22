@@ -236,6 +236,7 @@ html {
 
 /*--PIE DE PAGINA--*/
 .footer {
+  display: none;
   position: fixed;
   background-color: rgb(157, 31, 134);
   width: 100%;
