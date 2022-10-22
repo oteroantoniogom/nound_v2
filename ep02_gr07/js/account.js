@@ -29,27 +29,41 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  let useruname = getCookie("username");
-  let useruemail = getCookie("uemail");
-
-  if ((useruname == uname.value) || (useruemail == useremail.value)) {
-    alert("El nombre de usuario o el correo ya existen.");
-  }
   
-  else {  
-    setCookie("username", uname.value, 365);
-    setCookie("userpsw", psw.value, 365);
-    setCookie("userpname", pname.value, 365);
-    setCookie("usersurname", surname.value, 365);
-    setCookie("uemail", useremail.value, 365);
-    setCookie("birthday", birthday.value, 365);
+  
+  if (window.location.pathname == "/ep02_gr07/register.html") {
+    let useruname = getCookie("username");
+    let useruemail = getCookie("uemail");
+
+    if ((useruname == uname.value) || (useruemail == useremail.value)) {
+      alert("El nombre de usuario o el correo ya existen.");
+    }
+  
+    else {  
+      setCookie("username", uname.value, 365);
+      setCookie("userpsw", psw.value, 365);
+      setCookie("userpname", pname.value, 365);
+      setCookie("usersurname", surname.value, 365);
+      setCookie("uemail", useremail.value, 365);
+      setCookie("birthday", birthday.value, 365);
     /*
     list = [useruname, userpsw, userpname, usersurname, useremail, userbirthday];
     listStrings = ["username", "userpsw", "userpname", "usersurname", "email", "birthday"];
     */
     /*for (i=0; i<list.length; i++) {*/
+    }
+  }
 
+  else if (window.location.pathname == "/ep02_gr07/login.html") {
+    let useruname = getCookie("username");
+    let userpsw = getCookie("userpsw");
 
+    if ((useruname == uname.value) && (userpsw == psw.value)) {
+        window.location.replace("./index.html");
+    }
+    else {
+      alert("El nombre de usuario o la contraseña son incorrectos");
+    }
   }
 }
 
