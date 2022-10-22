@@ -163,7 +163,7 @@ input[type=text], input[type=password], input[type=date], input[type=image], inp
     background-color: blue;
   }
 
-  button[type=erase] {
+  button[type=reset] {
     background-color: rgb(155, 32, 32);
   }
   

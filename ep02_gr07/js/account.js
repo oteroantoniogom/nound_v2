@@ -1,10 +1,9 @@
 uname = document.getElementById("uname");
 psw = document.getElementById("psw");
-pname = document.getElementById("name");
+pname = document.getElementById("username");
 surname = document.getElementById("surname");
-email = document.getElementById("email");
+useremail = document.getElementById("email");
 birthday = document.getElementById("birthday");
-checkbox = document.getElementById("checkbox");
 
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
@@ -31,40 +30,27 @@ function getCookie(cname) {
 
 function checkCookie() {
   let useruname = getCookie("username");
-  let userpsw = getCookie("userpsw");
-  let userpname = getCookie("userpname");
-  let usersurname = getCookie("usersurname");
-  let useremail = getCookie("email");
-  let userbirthday = getCookie("birthday");
-  let usercheckbox = getCookie("checkbox");
+  let useruemail = getCookie("uemail");
 
-  if (userpsw == uname.value) {
-    alert("El nombre de usuario " + useruname + "ya existe.");
+  if ((useruname == uname.value) || (useruemail == useremail.value)) {
+    alert("El nombre de usuario o el correo ya existen.");
   }
-  if (userpname == uname.value) {
-    alert("El nombre de usuario " + useruname + "ya existe.");
-  }
-  if (usersurname == uname.value) {
-    alert("El nombre de usuario " + useruname + "ya existe.");
-  }
-  if (useremail == uname.value) {
-    alert("El nombre de usuario " + useruname + "ya existe.");
-  }
-  if (userbirthday == uname.value) {
-    alert("El nombre de usuario " + useruname + "ya existe.");
-  }
-  if (usercheckbox == uname.value) {
-    alert("El nombre de usuario " + useruname + "ya existe.");
-  } else {
-    useruname = uname.value;
-    if (useruname != "" && useruname != null) {
-      setCookie("username", useruname, 365);
-    }
-  }
-}
+  
+  else {  
+    setCookie("username", uname.value, 365);
+    setCookie("userpsw", psw.value, 365);
+    setCookie("userpname", pname.value, 365);
+    setCookie("usersurname", surname.value, 365);
+    setCookie("uemail", useremail.value, 365);
+    setCookie("birthday", birthday.value, 365);
+    /*
+    list = [useruname, userpsw, userpname, usersurname, useremail, userbirthday];
+    listStrings = ["username", "userpsw", "userpname", "usersurname", "email", "birthday"];
+    */
+    /*for (i=0; i<list.length; i++) {*/
 
-function cancelRegister() {
-  document.getElementById("formRegister").reset();
+
+  }
 }
 
 var coll = document.getElementsByClassName("collapsible");
