@@ -4,6 +4,7 @@ pname = document.getElementById("username");
 surname = document.getElementById("surname");
 useremail = document.getElementById("email");
 birthday = document.getElementById("birthday");
+let loggedin = false;
 
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
@@ -30,7 +31,6 @@ function getCookie(cname) {
 
 function checkCookie() {
   
-  
   if (window.location.pathname == "/ep02_gr07/register.html") {
     let useruname = getCookie("username");
     let useruemail = getCookie("uemail");
@@ -46,26 +46,21 @@ function checkCookie() {
       setCookie("usersurname", surname.value, 365);
       setCookie("uemail", useremail.value, 365);
       setCookie("birthday", birthday.value, 365);
-    /*
-    list = [useruname, userpsw, userpname, usersurname, useremail, userbirthday];
-    listStrings = ["username", "userpsw", "userpname", "usersurname", "email", "birthday"];
-    */
-    /*for (i=0; i<list.length; i++) {*/
     }
   }
 
   else if (window.location.pathname == "/ep02_gr07/login.html") {
     let useruname = getCookie("username");
     let userpsw = getCookie("userpsw");
-
     if ((useruname == uname.value) && (userpsw == psw.value)) {
-        window.location.replace("./index.html");
+      window.open("./logged.html") && window.close();
     }
     else {
       alert("El nombre de usuario o la contraseña son incorrectos");
     }
   }
 }
+
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -81,18 +76,3 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
-/*var x = 0;
-var pfp = document.getElementsByClassName("pfp-menu");
-var login = document.getElementsByClassName("login-signup");
-
-function myFunction() {
-  document.getElementsByClassName("pfp-menu").style.display ="none";
-}
-
-
-if (x == 1) {
-  pfp.style.display ="none";
-}  else {
-  login.style.display = "none";
-}*/
