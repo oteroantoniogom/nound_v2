@@ -46,6 +46,8 @@ function checkCookie() {
       setCookie("usersurname", surname.value, 365);
       setCookie("uemail", useremail.value, 365);
       setCookie("birthday", birthday.value, 365);
+
+      window.open("./logged.html") && window.close();
     }
   }
 
