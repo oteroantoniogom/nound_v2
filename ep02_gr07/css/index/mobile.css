@@ -203,10 +203,16 @@ html {
 
 .song {
   position: relative;
-  padding: 2.5%;
-  width: 20vh;
+  width: 20%;
   height: auto;
-  text-align: center;
+  align-content: center;
+}
+
+.song p{
+  width: 50%;
+  height: 75%;
+  margin-top: 10%;
+  font-size: 75%;
 }
 
 .song audio {
@@ -234,10 +240,6 @@ html {
   border: 2px solid white;
 }
 
-#maneskin_countdown, #pablopatodo_countdown, #connor_countdown {
-  width
-  margin-top: 20%;
-}
 /*--PIE DE PAGINA--*/
 .footer {
   position: fixed;
