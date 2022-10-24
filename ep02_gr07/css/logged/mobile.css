@@ -74,23 +74,53 @@ html {
 }
 
 .profile-img {
-  margin: 0 auto;
   margin-bottom: 5%;
-  margin-top: 5%;
-  position: relative;
-  width: 130px;
+  margin-top: 2%;
+  margin-left: 20%;
 }
 
 .profile-thumb {
   background: #fff none repeat scroll 0 0;
   border-radius: 50%;
-  box-shadow: 4px 5px 0 rgba(0, 0, 0, 0.1);
-  height: 130px;
+  box-shadow: 0.25vw 0.5vw 0 rgba(0, 0, 0, 0.1);
   margin: 0 0 0;
-  padding: 3px;
-  width: 130px;
+  padding: 1%;
+  height: 50%;
+  width: 50%;
 }
 
+.collapsible {
+  position: absolute;
+  top: 2%;
+  height: 5%;
+  right: 10%;
+  cursor: pointer;
+  padding: 4% 3%;
+  opacity: 0;
+}
+
+.pmenu{
+  position: absolute;
+  width: 90%;
+  overflow: hidden;
+  background-color: rgb(157, 31, 134);
+  display: none;
+}
+
+.pmenu-opciones{
+  height: auto;
+  padding: 1% 1%;
+  text-align: left;
+}
+
+.pmenu-opciones a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3vw;
+}
+.pmenu img {
+  width: 2vw;
+}
 .upload {
   bottom: -10px;
   position: absolute;
@@ -119,36 +149,7 @@ html {
   padding:5px 0 0 5px;
 }
 
-.collapsible {
-  position: absolute;
-  top: 4%;
-  right: 0%;
-  cursor: pointer;
-  padding: 4% 3%;
-  opacity: 0;
-}
 
-.pmenu{
-  position: absolute;
-  width: 90%;
-  overflow: hidden;
-  background-color: rgb(157, 31, 134);
-}
-
-.pmenu-opciones{
-  height: auto;
-  padding: 1% 1%;
-  text-align: left;
-}
-
-.pmenu-opciones a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.3vw;
-}
-.pmenu img {
-  width: 2vw;
-}
 
 /*--CUERPO PRINCIPAL--*/
 
