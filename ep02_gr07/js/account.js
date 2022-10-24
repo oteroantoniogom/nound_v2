@@ -63,6 +63,28 @@ function checkCookie() {
   }
 }
 
+if(localStorage.img) { 
+    $('#pfp-image').attr('src', localStorage.img);
+    }
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+        localStorage.setItem('img', e.target.result);
+          $('#pfp-image').attr('src', reader.result);
+        }
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+
+    $(".file-upload").change(function() {
+      readURL(this);
+    });
+
+    $(".upload-button").on('click', function() {
+      $(".file-upload").click();
+    });
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
