@@ -47,7 +47,7 @@ function checkCookie() {
       setCookie("uemail", useremail.value, 365);
       setCookie("birthday", birthday.value, 365);
 
-      window.open("./logged.html");
+      window.open("./logged.html") && window.close();
     }
   }
 
