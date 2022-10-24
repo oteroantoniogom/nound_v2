@@ -219,6 +219,50 @@ html {
   margin-top: 205px;
 }
 
+.search {
+  padding: 2%;
+  color: #eee;
+  background: linear-gradient(to bottom right, #B1227A, #429AEE);
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 30%;
+  margin-bottom: 5%;
+}
+
+.search :is(input, button) {
+  color: inherit;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.search__input {
+  width: 0;
+  transition: 3s;
+}
+
+.search__btn {
+  width: 4vw;
+  height: 4vw;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.search:focus-within input {
+  width: 100%;
+}
+
+::placeholder {
+  color: inherit;
+}
+
+#search-icon {
+  width: 2vw;
+  height: 2vw;
+}
+
 .article-albums {
   width: 100%;
   height: auto;
@@ -291,3 +335,5 @@ html {
   margin: 2%;
   font-size: 2vw;
 }
+
+
