@@ -64,7 +64,7 @@ function checkCookie() {
 }
 
 if(localStorage.img) { 
-    $('#pfp-image').attr('src', localStorage.img);
+    $('#bannerImg').attr('src', localStorage.img);
     }
     function readURL(input) {
       if (input.files && input.files[0]) {
@@ -72,7 +72,7 @@ if(localStorage.img) {
 
         reader.onload = function(e) {
         localStorage.setItem('img', e.target.result);
-          $('#pfp-image').attr('src', reader.result);
+          $('#bannerImg').attr('src', reader.result);
         }
         reader.readAsDataURL(input.files[0]);
       }
