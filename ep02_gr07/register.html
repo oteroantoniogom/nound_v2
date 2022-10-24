@@ -110,7 +110,7 @@
               placeholder="Contraseña"
               name="psw"
               id="psw"
-              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?0=.*[0-9])";
+              pattern="(?=[A-Za-z0-9]+$)^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).*$"
               title="8 caracteres. Al menos una mayúscula, una minúscula y un número."
               maxlength="8"
               required

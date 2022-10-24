@@ -234,6 +234,10 @@ html {
   border: 2px solid white;
 }
 
+#maneskin_countdown, #pablopatodo_countdown, #connor_countdown {
+  width
+  margin-top: 20%;
+}
 /*--PIE DE PAGINA--*/
 .footer {
   position: fixed;
