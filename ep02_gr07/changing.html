@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!--Hace que el navegador entienda caracteres especiales, como la ñ o los acentos-->
+  <meta charset="UTF-8" />
+  <!--Descripción de la página-->
+  <meta name="description" content="Registro de nueva cuenta" />
+  <!--Hace que los robots de SEO de Google coloquen nuestra página; es decir, posicionarla-->
+  <meta name="robots" content="index,follow" />
+
+  <!--Preguntar si inlcuimos user-scalable=no, maximum-scale=1.0, minimum-scale=1.0-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Viewport es el tamaño de la pantalla. -->
+  <meta name="author" content="Diego Alonso | Antonio Gómez" />
+
+  <title>Nound</title>
+  <!--linkea el archivo html con el css-->
+  <link rel="stylesheet" href="./css/register/mobile.css" />
+  <link rel="stylesheet" href="./css/register/tablet.css" media="Screen and (min-width: 600px)" />
+  <link rel="stylesheet" href="./css/register/desktop.css" media="screen and (min-width: 769px)" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body class="container">
+
+
+  <!--CABECERA-->
+
+  <header class="header">
+    <div class="logo-name">
+      <div>
+        <a href="./index.html">
+          <img id="logo" src="./images/nound_logo.png" alt="logo" />
+        </a>
+      </div>
+      <div>
+        <a href="./index.html">
+          <img id="name" src="./images/nound_name.png" alt="nombre" />
+        </a>
+      </div>
+    </div>
+    <div class="pfp-menu">
+      <div class="profile-img">
+        <img class="profile-thumb" src="https://tinyurl.com/kdc5vlp" id="bannerImg" />
+        <button class="collapsible" id="pfp-button">Button</button>
+        <div class="pmenu">
+          <div class="pmenu-opciones">
+            <img src="./images/perfil-64.png" alt="logo_perfil" />
+            <a href="./perfil.html">Perfil</a>
+          </div>
+          <div class="pmenu-opciones">
+            <img src="./images/cuenta-64.png" alt="logo_cuenta" />
+            <a href="./cuenta.html">Cuenta</a>
+          </div>
+          <div class="pmenu-opciones">
+            <img src="./images/logout-64.png" alt="logo_cerrar_sesion" />
+            <a href="#m2-o">Cerrar sesión</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--CUERPO PRINCIPAL-->
+
+  <main class="main">
+    <!--BARRA LATERAL-->
+
+    <aside class="aside">
+      <div class="opciones">
+        <img src="./images/house-64.png" alt="logo_inicio" />
+        <a href="./index.html">Inicio</a>
+      </div>
+      <div class="opciones">
+        <img src="./images/zoom-64.png" alt="logo_buscar" />
+        <a href="#">Buscar</a>
+      </div>
+      <div class="opciones">
+        <img src="./images/book-stack-64.png" alt="logo_biblioteca" />
+        <a href="./biblioteca.html">Biblioteca</a>
+      </div>
+      <div class="opciones">
+        <img src="./images/binoculars-64.png" alt="logo_explorar" />
+        <a href="#">Explorar</a>
+      </div>
+      <div class="opciones">
+        <img src="./images/cog-64.png" alt="logo_confi" />
+        <a href="#">Menu</a>
+      </div>
+      <div class="aside-extra">
+        <div>
+          <img src="./images/lock-7-64.png" alt="logo_privacidad" />
+          <a href="#">Privacidad</a>
+        </div>
+        <div>
+          <img src="./images/warning-3-64.png" alt="logo_cookies" />
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </aside>
+
+    <!--CONTENIDO PRINCIPAL-->
+    <article class="article">
+      <div class="modal-box">
+        <div class="modal-container" id="m2-o" style="--m-background: hsla(0, 0%, 0%, .4);">
+          <div class="modal">
+            <h1 class="modal__title">NOUND</h1>
+            <p class="modal__text">¿ESTÁS SEGUR@ DE QUE QUIERES CERRAR NOUND?</p>
+            <button class="modal__btn" onclick="window.open('./logged.html', '_self')">Quedarme &rarr;</button>
+            <button class="modal__btn" onclick="window.open('./index.html', '_self')">Salir &rarr;</button>
+            <a href="#m2-c" class="link-2"></a>
+          </div>
+        </div>
+      </div>
+
+      <div clas="container_form">
+        <form id="formRegister" onsubmit=checkCookie()>
+          <button type="submit_google">Registrarse con Google</button>
+          <button type="submit_facebook">Registrarse con Facebook</button>
+
+          <p>Informacion de la cuenta</p>
+
+          <label for="uname"><b>Nombre de usuario*</b></label>
+          <input type="text" placeholder="Nombre de usuario" name="uname" id="uname" required />
+
+          <label for="psw"><b>Contraseña*</b></label>
+          <input type="password" placeholder="Contraseña" name="psw" id="psw"
+            pattern="(?=[A-Za-z0-9]+$)^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).*$"
+            title="8 caracteres. Al menos una mayúscula, una minúscula y un número." maxlength="8" required />
+
+          <p>Informacion personal</p>
+
+          <label for="username"><b>Nombre*</b></label>
+          <input type="text" placeholder="Nombre" name="name" id="username" required />
+
+          <label for="surname"><b>Apellidos*</b></label>
+          <input type="text" placeholder="Apellidos" name="surname" id="surname" required />
+
+          <label for="email"><b>Email*</b></label>
+          <input type="email" placeholder="Email" name="email" id="email" required />
+
+          <label for="birthday"><b>Fecha de nacimiento*</b></label>
+          <input type="date" placeholder="dd/mm/aaaa" name="birthday" id="birthday" required />
+
+          <label for="pfp"><b>Foto de perfil</b></label>
+          <div class="profile-img">
+            <img class="profile-thumb" src="https://tinyurl.com/kdc5vlp" id="bannerImg" />
+            <div class="upload">
+              <div class="upload-button"><img src="https://tinyurl.com/mrphx9r" alt="" /></div>
+              <input class="file-upload" type="file" accept="image/*" />
+            </div>
+          </div>
+
+          <label>
+            <input type="checkbox" name="remember" id="checkbox" /> He leido y acepto las
+            condiciones de uso*
+          </label>
+
+          <button type="submit" id="submit">Registrarse</button>
+          <button type="reset" id="cancel">Cancelar</button>
+
+        </form>
+
+
+        <p id="reminder">* Campos obligatorios</p>
+
+      </div>
+    </article>
+  </main>
+  <script type="text/javascript" src="./js/account.js" />
+  </script>
+</body>
+
+</html>

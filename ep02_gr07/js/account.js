@@ -29,6 +29,10 @@ function getCookie(cname) {
   return "";
 }
 
+function muestraCookie() {
+  uname.value = getCookie("uname");
+}
+
 function checkCookie() {
   
   if (window.location.pathname == "/ep02_gr07/register.html") {
