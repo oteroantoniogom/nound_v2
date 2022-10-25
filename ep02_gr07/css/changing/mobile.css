@@ -1,0 +1,430 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0ch;
+}
+
+html {
+  font-size: 62.5%;
+  color: white;
+  font-family: "Press Start 2P";
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*--CABECERA--*/
+
+.header {
+  background-color: rgb(156, 241, 169);
+  width: 100%;
+  height: auto;
+  max-height: 70px;
+  min-height: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: fixed;
+  z-index: 3;
+}
+
+.logo-name {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#logo, #name{
+  width: 100%;
+  height: auto;
+  max-height: 80px;
+  min-height: 30px;
+}
+
+.login-signup {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: 15%;
+}
+
+#login, #signup {
+  margin: 5%;
+}
+
+#login a, #signup a {
+  font-size: 1.75vw;
+  text-decoration: none;
+  color: #31244f;
+}
+
+.pfp-menu{
+  width: 100%;
+  height: auto;
+  max-height: 70px;
+  align-items: center;
+  margin-left: 50%;
+}
+
+.profile-img {
+  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-left: 20%;
+}
+
+.profile-thumb {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 50%;
+  box-shadow: 0.25vw 0.5vw 0 rgba(0, 0, 0, 0.1);
+  margin: 0 0 0;
+  padding: 1%;
+  height: 40%;
+  width: 40%;
+}
+
+.collapsible {
+  position: absolute;
+  top: 0%;
+  margin: 0%;
+  width: 10%;
+  height: 5%;
+  right: 10%;
+  cursor: pointer;
+  padding: 4% 3%;
+  opacity: 0;
+}
+
+.pmenu{
+  position: absolute;
+  width: 90%;
+  overflow: hidden;
+  background-color: rgb(157, 31, 134);
+  display: none;
+}
+
+.pmenu-opciones{
+  height: auto;
+  padding: 1% 1%;
+  text-align: left;
+}
+
+.pmenu-opciones a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.0vw;
+}
+.pmenu img {
+  width: 2vw;
+}
+.upload {
+  bottom: -10px;
+  position: absolute;
+  right: 0;
+}
+
+.upload img {
+  cursor: pointer;
+}
+
+.file-upload {
+  display: none !important;
+}
+
+.upload-button {
+  width:32px;
+  height:32px;
+  background: #FFF;
+  border-radius:50%;
+  border:2px solid #CCC;
+}
+
+.upload-button img {
+  width: 22px;
+  height: 22px;
+  padding:5px 0 0 5px;
+}
+
+
+
+/*--CUERPO PRINCIPAL--*/
+
+.main {
+  background-image: linear-gradient(
+    rgb(156, 241, 169),
+    rgb(167, 194, 162),
+    rgb(170, 147, 153),
+    rgb(166, 97, 144),
+    rgb(157, 31, 134)
+  );
+  width: 100%;
+  height: auto;
+  padding-bottom: 10%;
+  overflow-x: hidden;
+  margin-top: 3%;
+}
+
+/* modal */
+.modal-container {
+  position: fixed;
+  top: 30%;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+
+  /* --m-background is set as inline style */
+  background: linear-gradient(to right, hsl(210, 30%, 20%), hsl(255, 30%, 25%))
+}
+
+/* using :target */
+/*
+when users will click/enter button(link) browser will add a #id in a url and when that happens we'll show our users the modal that contains that id.
+*/
+.modal-container:target {
+  display: flex;
+}
+
+.modal {
+  width: 60rem;
+  padding: 4rem 2rem;
+  border-radius: .8rem;
+
+  color: hsl(220, 50%, 90%);
+  background: linear-gradient(to right, hsl(210, 30%, 20%), hsl(255, 30%, 25%));
+  box-shadow: (236, 50%, 50%, .4);
+  position: relative;
+
+  overflow: hidden;
+}
+
+.modal__title {
+  font-size: 3.2rem;
+}
+
+.modal__text {
+  padding: 0 4rem;
+  margin-top: 4rem;
+
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.modal__btn {
+  margin-top: 4rem;
+  padding: 1rem 1.6rem;
+  border: 1px solid hsla(0, 0%, 100%, .2);
+  border-radius: 100rem;
+
+  color: inherit;
+  background: transparent;
+  font-size: 1.4rem;
+  font-family: inherit;
+  letter-spacing: .2rem;
+
+  transition: .2s;
+  cursor: pointer;
+}
+
+.modal__btn:nth-of-type(1) {
+  margin-right: 1rem;
+}
+
+.modal__btn:hover,
+.modal__btn:focus {
+  background: hsl(210, 90%, 50%);
+  border-color: hsl(210, 90%, 50%);
+  transform: translateY(-.2rem);
+}
+
+/* link-... */
+.link-2 {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid hsla(0, 0%, 100%, .2);
+  border-radius: 100rem;
+
+  color: inherit;
+  font-size: 2.2rem;
+
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: .2s;
+}
+
+.link-2::before {
+  content: '×';
+
+  transform: translateY(-.1rem);
+}
+
+.link-2:hover,
+.link-2:focus {
+  background: hsl(210, 90%, 50%);
+  border-color: hsl(210, 90%, 50%);
+  transform: translateY(-.2rem);
+}
+
+/*--BARRA LATERAL--*/
+.aside {
+  position: fixed;
+  background-color: #31244f;
+  width: 100%;
+  height: auto;
+  max-height: 205px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 15%;
+  z-index: 2;
+}
+
+.opciones, .aside-extra div {
+  height: auto;
+  margin: 2rem 1.25rem;
+  text-align: center;
+}
+
+.aside img {
+  margin: 0%;
+  width: 2vw;
+}
+
+.opciones a, .aside-extra a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.55vw;
+}
+
+.opciones a:hover, .aside-extra a:hover {
+  color: rgb(156, 241, 169);
+}
+
+.opciones a:active, .aside-extra a:active {
+  color: #d217b6;
+}
+
+.aside-extra {
+  justify-content: center;
+  display: flex;
+}
+
+/*--CONTENIDO PRINCIPAL--*/
+.article {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30%;
+  margin-top: 205px;
+  padding: 5% 20%;
+  font-size: 3vw;
+  text-align: center;
+  
+}
+
+.container_form p{
+    margin: 7.5%;
+}
+
+#reminder{
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+input[type=text], input[type=password], input[type=date], input[type=image], input[type=email], input[type=file] {
+    width: 100%;
+    padding: 2% 5%;
+    margin: 4% 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+
+.profile-img2 {
+  margin: 0 auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  position: relative;
+  width: 130px;
+}
+
+.upload {
+  bottom: -10px;
+  position: absolute;
+  right: 0;
+}
+
+.upload img {
+  cursor: pointer;
+}
+
+.file-upload {
+  display: none !important;
+}
+
+.upload-button {
+  width:32px;
+  height:32px;
+  background: #FFF;
+  border-radius:50%;
+  border:2px solid #CCC;
+}
+
+.upload-button img {
+  width: 22px;
+  height: 22px;
+  padding:5px 0 0 5px;
+}
+
+
+  button {
+    width: 60%;
+    color: white;
+    padding: 5% 20px;
+    margin: 3% 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 100%;
+  }
+
+  button[type=submit] {
+    background-color: #31244f;
+    margin-top: 15%;
+  }
+
+  button[type=submit_google] {
+    background-color: red;
+  }
+  
+  button[type=submit_facebook] {
+    background-color: blue;
+  }
+
+  button[type=reset] {
+    background-color: rgb(155, 32, 32);
+  }
+  
+  button:hover {
+    opacity: 0.7;
+  }
+
+
+
+

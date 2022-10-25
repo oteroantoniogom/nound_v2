@@ -4,7 +4,14 @@ pname = document.getElementById("username");
 surname = document.getElementById("surname");
 useremail = document.getElementById("email");
 birthday = document.getElementById("birthday");
-let loggedin = false;
+
+newuname = document.getElementById("newuname");
+newpsw = document.getElementById("newpsw");
+newpname = document.getElementById("newusername");
+newsurname = document.getElementById("newsurname");
+newuseremail = document.getElementById("newemail");
+newbirthday = document.getElementById("newbirthday");
+
 
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
@@ -30,11 +37,16 @@ function getCookie(cname) {
 }
 
 function muestraCookie() {
-  uname.value = getCookie("uname");
+  newuname = getCookie("username");
+  newpsw = getCookie("psw");
+  newpname = getCookie("username");
+  newsurname = getCookie("surname");
+  newuseremail = getCookie("email");
+  newbirthday = getCookie("birthday");
 }
 
 function checkCookie() {
-  
+
   if (window.location.pathname == "/ep02_gr07/register.html") {
     let useruname = getCookie("username");
     let useruemail = getCookie("uemail");
@@ -42,8 +54,8 @@ function checkCookie() {
     if ((useruname == uname.value) || (useruemail == useremail.value)) {
       alert("El nombre de usuario o el correo ya existen.");
     }
-  
-    else {  
+
+    else {
       setCookie("username", uname.value, 365);
       setCookie("userpsw", psw.value, 365);
       setCookie("userpname", pname.value, 365);
@@ -67,33 +79,33 @@ function checkCookie() {
   }
 }
 
-if(localStorage.img) { 
-    $('#bannerImg').attr('src', localStorage.img);
+if (localStorage.img) {
+  $('#bannerImg').attr('src', localStorage.img);
+}
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      localStorage.setItem('img', e.target.result);
+      $('#bannerImg').attr('src', reader.result);
     }
-    function readURL(input) {
-      if (input.files && input.files[0]) {
-        var reader = new FileReader();
+    reader.readAsDataURL(input.files[0]);
+  }
+}
 
-        reader.onload = function(e) {
-        localStorage.setItem('img', e.target.result);
-          $('#bannerImg').attr('src', reader.result);
-        }
-        reader.readAsDataURL(input.files[0]);
-      }
-    }
+$(".file-upload").change(function () {
+  readURL(this);
+});
 
-    $(".file-upload").change(function() {
-      readURL(this);
-    });
-
-    $(".upload-button").on('click', function() {
-      $(".file-upload").click();
-    });
+$(".upload-button").on('click', function () {
+  $(".file-upload").click();
+});
 
 var coll = document.getElementsByClassName("collapsible");
 
 for (var i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+  coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
