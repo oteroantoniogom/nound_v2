@@ -5,13 +5,6 @@ surname = document.getElementById("surname");
 useremail = document.getElementById("email");
 birthday = document.getElementById("birthday");
 
-newuname = document.getElementById("newuname");
-newpsw = document.getElementById("newpsw");
-newpname = document.getElementById("newusername");
-newsurname = document.getElementById("newsurname");
-newuseremail = document.getElementById("newemail");
-newbirthday = document.getElementById("newbirthday");
-
 
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
@@ -36,13 +29,13 @@ function getCookie(cname) {
   return "";
 }
 
-function muestraCookie() {
-  newuname = getCookie("username");
-  newpsw = getCookie("psw");
-  newpname = getCookie("username");
-  newsurname = getCookie("surname");
-  newuseremail = getCookie("email");
-  newbirthday = getCookie("birthday");
+function showCookie() {
+  document.getElementById("uname").value = getCookie("uname");
+  document.getElementById("psw").value = getCookie("psw");
+  document.getElementById("username").value = getCookie("username");
+  document.getElementById("surname").value = getCookie("surname");
+  document.getElementById("email").value = getCookie("email");
+  document.getElementById("birthday").value = getCookie("birthday");
 }
 
 function checkCookie() {
