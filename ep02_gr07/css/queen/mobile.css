@@ -111,92 +111,90 @@ html {
 /*--CONTENIDO PRINCIPAL--*/
 .article {
   width: 100%;
+  height: auto;
+  margin-bottom: 30%;
   margin-top: 205px;
   font-size: 3vw;
-  height: auto;
+  text-align: center;
   
 }
-.profile-section {
-  width: 100%;
-  height: auto;
+.title-img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    font-size: large;
+    margin-bottom: 12%;
 }
 
-.profile-titles {
-  margin-top: 5%;
-  font-size: 3.5vw;
-  height: auto;
-  width: auto;
+.title-img img{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
 }
 
-.profile-song-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+.title-img p{
+    font-size: 2.5vw;
+}
+
+.queen-section {
+    width: 100%;
+    height: auto;
+}
+
+.queen-titles {
+    margin-top: 5%;
+    font-size: 3.5vw;
+    height: auto;
+    width: auto;
+}
+
+.queen-song-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 
 .song {
-  position: relative;
-  width: 25vmin;
-  height: 50%;
+    position: relative;
+    width: 25vmin;
+    height: 50%;
 }
 
 .song p{
-  width: 100%;
-  height: 100%;
-  padding: 2%;
-  font-size: 75%;
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    font-size: 75%;
 }
 
 .song audio {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0%;
-  left: 0%;
-  z-index: 1;
-  opacity: 0%;
-  transition: transform 0.2s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    opacity: 0%;
+    transition: transform 0.2s;
 }
 
 .song audio:hover {
-  opacity: 80%;
-  border: 3px dashed #31244f;
-  transform: scale(1.1);
-  z-index: 2;
+    opacity: 80%;
+    border: 3px dashed #31244f;
+    transform: scale(1.1);
+    z-index: 2;
 }
 
 .song img {
-  width: 15vmin;
-  height: 15vmin;
-  border-radius: 50%;
-  border: 2px solid white;
-}
-
-.profile-artists-container{
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-}
-
-.artist {
-  width: 25vmin;
-  height: 50%;
-}
-
-.artist a{
-  color: white;
-  text-decoration: none;
-}
-
-.artist img {
-  width: 15vmin;
-  height: 15vmin;
-  border-radius: 50%;
-  border: 2px solid white;
-}
+    margin-top: 10%;
+    width: 15vmin;
+    height: 15vmin;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
