@@ -111,11 +111,87 @@ html {
 /*--CONTENIDO PRINCIPAL--*/
 .article {
   width: 100%;
-  height: auto;
-  margin-bottom: 30%;
   margin-top: 205px;
-  padding: 5% 20%;
   font-size: 3vw;
-  text-align: center;
+  height: auto;
   
+}
+.profile-section {
+  width: 100%;
+  height: auto;
+}
+
+.profile-titles {
+  margin-top: 5%;
+  font-size: 3.5vw;
+  height: auto;
+  width: auto;
+}
+
+.profile-song-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.song {
+  position: relative;
+  width: 25vmin;
+  height: 50%;
+}
+
+.song p{
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  font-size: 75%;
+}
+
+.song audio {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  opacity: 0%;
+  transition: transform 0.2s;
+}
+
+.song audio:hover {
+  opacity: 80%;
+  border: 3px dashed #31244f;
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.song img {
+  width: 15vmin;
+  height: 15vmin;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.profile-artists-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.artist {
+  width: 25vmin;
+  height: 50%;
+}
+
+.artist img {
+  width: 15vmin;
+  height: 15vmin;
+  border-radius: 50%;
+  border: 2px solid white;
 }

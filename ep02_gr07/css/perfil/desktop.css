@@ -52,3 +52,16 @@
     height: auto;
     margin-bottom: 0%;
   }
+
+  .profile-section {
+    margin-top: 1%;
+    font-size: 2vw;
+  }
+
+  .profile-song-container {
+    justify-content: left;
+  }
+
+  .song {
+    margin: 1.75%;
+  }
