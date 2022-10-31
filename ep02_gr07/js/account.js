@@ -29,15 +29,6 @@ function getCookie(cname) {
   return "";
 }
 
-function showCookie() {
-  document.getElementById("uname").value = getCookie("uname");
-  document.getElementById("psw").value = getCookie("psw");
-  document.getElementById("username").value = getCookie("username");
-  document.getElementById("surname").value = getCookie("surname");
-  document.getElementById("email").value = getCookie("email");
-  document.getElementById("birthday").value = getCookie("birthday");
-}
-
 function checkCookie() {
 
   if (window.location.pathname == "/ep02_gr07/register.html") {
@@ -75,6 +66,7 @@ function checkCookie() {
 if (localStorage.img) {
   $('#bannerImg').attr('src', localStorage.img);
 }
+
 function readURL(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();

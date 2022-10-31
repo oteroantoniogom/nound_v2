@@ -23,7 +23,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<body class="container" onload=muestraCookie()>
+<body class="container">
 
 
   <!--CABECERA-->
@@ -116,33 +116,33 @@
       </div>
 
       <div clas="container_form">
-        <form id="formRegister" onload=showCookie()>
+        <form id="formRegister" onsubmit=checkCookie2()>
           <button type="submit_google">Registrarse con Google</button>
           <button type="submit_facebook">Registrarse con Facebook</button>
 
           <p>Informacion de la cuenta</p>
 
           <label for="uname"><b>Nombre de usuario*</b></label>
-          <input type="text" placeholder="Nombre de usuario" name="uname" id="newuname" required />
+          <input type="text" placeholder="Nombre de usuario" name="uname" id="uname" required />
 
           <label for="psw"><b>Contraseña*</b></label>
-          <input type="password" placeholder="Contraseña" name="psw" id="newpsw"
+          <input type="password" placeholder="Contraseña" name="psw" id="psw"
             pattern="(?=[A-Za-z0-9]+$)^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).*$"
             title="8 caracteres. Al menos una mayúscula, una minúscula y un número." maxlength="8" required />
 
           <p>Informacion personal</p>
 
           <label for="username"><b>Nombre*</b></label>
-          <input type="text" placeholder="Nombre" name="name" id="newusername" required />
+          <input type="text" placeholder="Nombre" name="name" id="username" required />
 
           <label for="surname"><b>Apellidos*</b></label>
           <input type="text" placeholder="Apellidos" name="newsurname" id="surname" required />
 
           <label for="email"><b>Email*</b></label>
-          <input type="email" placeholder="Email" name="email" id="newemail" required />
+          <input type="email" placeholder="Email" name="email" id="email" required />
 
           <label for="birthday"><b>Fecha de nacimiento*</b></label>
-          <input type="date" placeholder="dd/mm/aaaa" name="birthday" id="newbirthday" required />
+          <input type="date" placeholder="dd/mm/aaaa" name="birthday" id="birthday" required />
 
           <label for="pfp"><b>Foto de perfil</b></label>
           <div class="profile-img2">
@@ -169,7 +169,7 @@
       </div>
     </article>
   </main>
-  <script type="text/javascript" src="./js/account.js" />
+  <script type="text/javascript" src="./js/changing.js" />
   </script>
 </body>
 
