@@ -84,10 +84,8 @@
   font-size: 2vw;
 }
 
-/*---PIE DE PAGINA--*/
-.footer p{
-  margin: 2%;
-  font-size: 2vw;
-  display: none;
+.player{
+  width:70%;
+  left:30%
 }
 

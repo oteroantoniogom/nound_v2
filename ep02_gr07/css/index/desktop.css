@@ -1,4 +1,4 @@
- /*--CABECERA--*/
+/*--CABECERA--*/
   .header {
     max-height: 110px;
     min-height: 50px;
@@ -75,7 +75,13 @@
 
   .song {
     margin: 1.75%;
-    margin-left: 5%
+  }
+
+  .player{
+    width:75%;
+    left: 25%;
+    top:80%;
+    font-size: 60%;
   }
 
 /*--PIE DE PAGINA--*/

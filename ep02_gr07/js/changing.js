@@ -1,11 +1,4 @@
 function showCookie() {
-    window.onload = function() {
-    window.location + '#loaded';
-    if(!window.location.hash) {
-        window.location = window.location + '#loaded';
-        window.location.reload();
-    }
-    }
     document.getElementById("uname").value = getCookie("username");
     document.getElementById("psw").value = getCookie("userpsw");
     document.getElementById("username").value = getCookie("userpname");
@@ -38,12 +31,12 @@ function getCookie(cname) {
 }
 
 function checkCookie2() {
-    uname = document.getElementById("uname").value;
-    psw = document.getElementById("psw").value;
-    pname = document.getElementById("username").value;
-    surname = document.getElementById("surname").value;
-    useremail = document.getElementById("email").value;
-    birthday = document.getElementById("birthday").value;
+    uname = document.getElementById("uname");
+    psw = document.getElementById("psw");
+    pname = document.getElementById("username");
+    surname = document.getElementById("surname");
+    useremail = document.getElementById("email");
+    birthday = document.getElementById("birthday");
 
     setCookie("username", uname.value, 365);
     setCookie("userpsw", psw.value, 365);

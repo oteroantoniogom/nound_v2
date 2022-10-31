@@ -109,31 +109,31 @@
             <div class="song">
               <p>PABLOPA TODO</p>
               <img src="./images/artist_photo.jpg" alt="MEJOR MAÑANA" />
-              <audio controls src="./audio/mejormanana.mp3"></audio>
+              <img id="play" src="./images/play.png" alt="play" onclick= "showPlayer(0)">
               <p>MEJOR MAÑANA</p>
             </div>
             <div class="song">
               <p>PEPE ASTRO</p>
               <img src="./images/pepeastro.jpg" alt="32BARRASDETERROR" />
-              <audio controls src="./audio/32barrasdeterror.mp3"></audio>
+              <img id="play" src="./images/play.png" alt="play" onclick="showPlayer(1)">
               <p>32BARRAS</p>
             </div>
             <div class="song">
               <p>BAD BUNNY</p>
               <img src="./images/bad_bunny.jpg" alt="ANDREA" />
-              <audio controls src="./audio/andrea.mp3"></audio>
+              <img id="play" src="./images/play.png" alt="play" onclick="showPlayer(2)">
               <p>ANDREA</p>
             </div>
             <div class="song">
               <p>DELAOSSA</p>
               <img src="./images/elpatio.jpg" alt="EL PATIO" />
-              <audio controls src="./audio/elpatio.mp3"></audio>
+              <img id="play" src="./images/play.png" alt="play" onclick="showPlayer(3)">
               <p>EL PATIO</p>
             </div>
             <div class="song">
               <p>ROSALÍA</p>
               <img src="./images/candy.jpg" alt="CANDY" />
-              <audio controls src="./audio/candy.mp3"></audio>
+              <img id="play" src="./images/play.png" alt="play" onclick="showPlayer(4)">
               <p>CANDY</p>
             </div>
           </div>
@@ -143,31 +143,31 @@
             <div class="song">
               <p>M. JACKSON</p>
               <img src="./images/jackson.jpg" alt="BILLIE JEAN" />
-              <audio controls src="./audio/billiejean.mp3"></audio>
+              <img id="play" src="./images/play.png" alt="play" onclick="showPlayer(5)">
               <p>BILLIE JEAN</p>
             </div>
             <div class="song">
               <p>QUEEN</p>
               <img src="./images/queen.jpg" alt="BOHEMIAN RHAPSODY" />
-              <audio controls src="./audio/bohemian.mp3"></audio>
+              <img id="play" src="./images/play.png" alt="play" onclick="showPlayer(6)">
               <p>BOHEMIAN RHAPSODY</p>
             </div>
             <div class="song">
               <p>COLDPLAY</p>
               <img src="./images/coldplay.jpg" alt="VIVA LA VIDA" />
-              <audio controls src="./audio/vivalavda.mp3"></audio>
+              <img id="play" src="./images/play.png" alt="play" onclick="showPlayer(7)">
               <p>VIVA LA VIDA</p>
             </div>
             <div class="song">
               <p>THE BEATLES</p>
               <img src="./images/beatles.jpg" alt="HERE COMES THE SUN" />
-              <audio controls src="./audio/thesun.mp3"></audio>
+              <img id="play" src="./images/play.png" alt="play" onclick="showPlayer(8)">
               <p>HERE COMES THE SUN</p>
             </div>
             <div class="song">
               <p>DIRE STRAITS</p>
               <img src="./images/swing.jpg" alt="SULTANS OF SWING" />
-              <audio controls src="./audio/sultansofswing.mp3"></audio>
+              <img id="play" src="./images/play.png" alt="play" onclick="showPlayer(9)">
               <p>SULTANS OF SWING</p>
             </div>
           </div>
@@ -177,31 +177,31 @@
             <div class="song">
               <p>TIMEFLIES</p>
               <img src="./images/timeflies.png" alt="DIE YOUNG" />
-              <audio controls src="./audio/dieyoung.mp3"></audio>
+              <img id="play" src="./images/play.png" alt="play" onclick="showPlayer(10)">
               <p>DIE YOUNG</p>
             </div>
             <div class="song">
               <p>ONE REPUBLIC</p>
               <img src="./images/onerepublic.jpg" alt="SECRETS" />
-              <audio controls src="./audio/secrets.mp3"></audio>
+              <img id="play" src="./images/play.png" alt="play" onclick="showPlayer(11)">
               <p>SECRETS</p>
             </div>
             <div class="song">
               <p>JOHN POLLON</p>
               <img src="./images/gallina.jpg" alt="GALLINA" />
-              <audio controls src="./audio/gallinaycocaina.mp3"></audio>
+              <img id="play" src="./images/play.png" alt="play" onclick="showPlayer(12)">
               <p>GALLINA Y COCAÍNA</p>
             </div>
             <div class="song">
               <p>OWL CITY</p>
               <img src="./images/fireflies.jpg" alt="FIREFLIES" />
-              <audio controls src="./audio/fireflies.mp3"></audio>
+              <img id="play" src="./images/play.png" alt="play" onclick="showPlayer(13)">
               <p>FIREFLIES</p>
             </div>
             <div class="song">
               <p>ALBOROSIE</p>
               <img src="./images/unforgiven.jpg" alt="UNFORGIVEN" />
-              <audio controls src="./audio/theunforgiven.mp3"></audio>
+              <img id="play" src="./images/play.png" alt="play" onclick="showPlayer()">
               <p>UNFORGIVEN</p>
             </div>
           </div>
@@ -229,6 +229,29 @@
             </div>
           </div>
         </div>
+        <div class="player" id="player">
+          <div class="details">
+            <div class="track-name"></div>
+            <div class="track-artist"></div>
+          </div>
+          <div class="buttons">
+            <div class="playpause-track" onclick="playpauseTrack()">
+              <i class="fa fa-play-circle fa-5x">PLAY</i>
+            </div>
+          </div>
+          <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100"
+              value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+          </div>
+          <div class="slider_container">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="1" max="100"
+              value="99" class="volume_slider" onchange="setVolume()">
+            <i class="fa fa-volume-up"></i>
+          </div>
+        </div>
       </article>
     </main>
 
@@ -243,5 +266,6 @@
 
     <script type="text/javascript" src="./js/account.js"></script>
     <script type="text/javascript" src="./js/countdown.js"></script>
+    <script type="text/javascript" src="./js/music.js"></script>
   </body>
 </html>

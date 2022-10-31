@@ -44,8 +44,8 @@
   }
 
   .opciones {
-    margin: 7.5%;
-    margin-top: 5%;
+    margin: 0%;
+    margin-top: 0%;
   }
 
   .opciones a {
@@ -53,7 +53,7 @@
   }
 
   .aside-extra {
-    top:50%;
+    top:60%;
   } 
 
 /*--CONTENIDO PRINCIPAL--*/

@@ -46,25 +46,6 @@ html {
   min-height: 30px;
 }
 
-.login-signup {
-  width: 60%;
-  height: auto;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin-left: 15%;
-}
-
-#login, #signup {
-  margin: 5%;
-}
-
-#login a, #signup a {
-  font-size: 1.75vw;
-  text-decoration: none;
-  color: #31244f;
-}
-
 .pfp-menu{
   width: 100%;
   height: auto;
@@ -404,23 +385,25 @@ when users will click/enter button(link) browser will add a #id in a url and whe
   width: 20vh;
   height: auto;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.song audio {
+#play {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0%;
-  left: 0%;
+  width: 10vmin;
+  height: 10vmin;
+  top: 30%;
+  left:35%;
   z-index: 1;
   opacity: 0%;
   transition: transform 0.2s;
+  border: 0px;
+  border-radius: 0%;
 }
 
-.song audio:hover {
+#play:hover {
   opacity: 80%;
-  border: 3px dashed #31244f;
-  transform: scale(1.1);
   z-index: 2;
 }
 
@@ -431,24 +414,91 @@ when users will click/enter button(link) browser will add a #id in a url and whe
   border: 2px solid white;
 }
 
-/*--PIE DE PAGINA--*/
-.footer {
+.player {
   display: none;
-  position: fixed;
   background-color: rgb(157, 31, 134);
   width: 100%;
-  max-height: 15%;
-  height: auto;
-  padding: 2.5%;
-  text-align: center;
-
-  bottom: 0%;
-  z-index: 2;
+  height: 10%;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position:fixed;
+  top:90%;
+  left:0%
 }
 
-.footer p {
-  margin: 2%;
-  font-size: 2vw;
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.now-playing, .track-name, .track-artist {
+  margin:2%;
+  font-size: 70%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.playpause-track {
+  padding: 25px;
+  opacity: 0.8;
+  transition: opacity .2s;
+}
+
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+  opacity: 1.0;
+}
+
+.slider_container {
+  width: 75%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seek_slider, .volume_slider {
+  width: 100%;
+  appearance: none;
+  height: 5px;
+  background: black;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.volume_slider {
+  width: 40%;
+  appearance: none;
+  height: 5px;
+  background: black;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.current-time,
+.total-duration {
+  padding: 10px;
+}
+ 
+i.fa-volume-down,
+i.fa-volume-up {
+  padding: 10px;
+}
+
+i.fa-play-circle,
+i.fa-pause-circle {
+  cursor: pointer;
 }
 
 

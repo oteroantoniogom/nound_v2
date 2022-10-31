@@ -72,6 +72,12 @@
   font-size: 2vw;
 }
 
+.player{
+  width:70%;
+  left: 30%;
+  top:75%
+}
+
 /*---PIE DE PAGINA--*/
 .footer p{
   margin: 2%;

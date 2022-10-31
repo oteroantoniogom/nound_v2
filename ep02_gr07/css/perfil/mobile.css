@@ -129,7 +129,8 @@ html {
 
 .profile-titles {
   margin-top: 5%;
-  font-size: 3.5vw;
+  margin-bottom: 5%;
+  font-size: 3vw;
   height: auto;
   width: auto;
 }
@@ -205,4 +206,34 @@ html {
   height: 15vmin;
   border-radius: 50%;
   border: 2px solid white;
+}
+
+#showList {
+  width: 100%;
+  height:100%;
+  border: 3px dashed white;
+  display: flex;
+
+}
+
+#liked_list {
+  width: 100%;
+  height:100%;
+  display: flex;
+  font-size: 50%;
+}
+
+#song1, #song2, #song3, #song4, #song5 {
+  display:none;
+  width: 25vmin;
+  height: 50%;
+
+}
+
+#song1 img, #song2 img, #song3 img, #song4 img, #song5 img {
+  width: 15vmin;
+  height: 15vmin;
+  border-radius: 50%;
+  border: 2px solid white;
+
 }

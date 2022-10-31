@@ -42,6 +42,7 @@
             </a>
           </div>
         </div>
+        
       </header>
 
       <!--CUERPO PRINCIPAL-->
@@ -52,15 +53,15 @@
         <aside class="aside">
           <div class="opciones">
             <img src="./images/house-64.png" alt="logo_inicio" />
-            <a href="#">Inicio</a>
+            <a href="./logged.html">Inicio</a>
           </div>
           <div class="opciones">
             <img src="./images/zoom-64.png" alt="logo_buscar" />
-            <a href="#">Buscar</a>
+            <a href="">Buscar</a>
           </div>
           <div class="opciones">
             <img src="./images/book-stack-64.png" alt="logo_biblioteca" />
-            <a href="#">Biblioteca</a>
+            <a href="./biblioteca.html">Biblioteca</a>
           </div>
           <div class="opciones">
             <img src="./images/binoculars-64.png" alt="logo_explorar" />
@@ -84,39 +85,39 @@
 
         <!--CONTENIDO PRINCIPAL-->
 
-        <article class="article"></article>
+        <article class="article">
           <div class="profile-section">
             <h1 class="profile-titles">TUS CANCIONES MÁS ESCUCHADAS</h1>
             <div class="profile-song-container">
               <div class="song">
                 <p>PABLOPA TODO</p>
                 <img src="./images/artist_photo.jpg" alt="MEJOR MAÑANA" />
-                <audio controls src="./audio/mejormanana.mp3"></audio>
                 <p>MEJOR MAÑANA</p>
+                <button class="liked" onclick="like(1)">Me gusta</button>
               </div>
               <div class="song">
                 <p>QUEEN</p>
                 <img src="./images/queen.jpg" alt="BOHEMIAN RHAPSODY" />
-                <audio controls src="./audio/bohemian.mp3"></audio>
                 <p>BOHEMIAN RHAPSODY</p>
+                <button class="liked" onclick="like(2)">Me gusta</button>
               </div>
               <div class="song">
                 <p>COLDPLAY</p>
                 <img src="./images/coldplay.jpg" alt="VIVA LA VIDA" />
-                <audio controls src="./audio/vivalavda.mp3"></audio>
                 <p>VIVA LA VIDA</p>
+                <button class="liked" onclick="like(3)">Me gusta</button>
               </div>
               <div class="song">
                 <p>ONE REPUBLIC</p>
                 <img src="./images/onerepublic.jpg" alt="SECRETS" />
-                <audio controls src="./audio/secrets.mp3"></audio>
                 <p>SECRETS</p>
+                <button class="liked" onclick="like(4)">Me gusta</button>
               </div>
               <div class="song">
                 <p>OWL CITY</p>
                 <img src="./images/fireflies.jpg" alt="FIREFLIES" />
-                <audio controls src="./audio/fireflies.mp3"></audio>
                 <p>FIREFLIES</p>
+                <button class="liked" onclick="like(5)">Me gusta</button>
               </div>
             </div>
           </div>
@@ -136,14 +137,75 @@
           </div>
           <div class="profile-section">
             <h1 class="profile-titles">CANCIONES QUE TE GUSTAN</h1>
+            <div id="liked_list">
+              <div class="likedsong" id="song1">
+                <p>PABLOPA TODO</p>
+                <img src="./images/artist_photo.jpg" alt="MEJOR MAÑANA" />
+                <p>MEJOR MAÑANA</p>
+              </div>
+              <div class="likedsong" id="song2">
+                <p>QUEEN</p>
+                <img src="./images/queen.jpg" alt="BOHEMIAN RHAPSODY" />
+                <p>BOHEMIAN RHAPSODY</p>
+              </div>
+              <div class="likedsong" id="song3">
+                <p>COLDPLAY</p>
+                <img src="./images/coldplay.jpg" alt="VIVA LA VIDA" />
+                <p>VIVA LA VIDA</p>
+              </div>
+              <div class="likedsong" id="song4">
+                <p>ONE REPUBLIC</p>
+                <img src="./images/onerepublic.jpg" alt="SECRETS" />
+                <p>SECRETS</p>
+              </div>
+              <div class="likedsong" id="song5">
+                <p>OWL CITY</p>
+                <img src="./images/fireflies.jpg" alt="FIREFLIES" />
+                <p>FIREFLIES</p>
+              </div>
+            </div>
           </div>
           <div class="profile-section">
             <h1 class="profile-titles">TUS LISTAS</h1>
+            <p>Musicote</p>
+            <div id="showList" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <div id="drag8" class="song" data-path="./audio/andrea.mp3" draggable="true" ondragstart="drag(event)">
+                <p>BAD BUNNY</p>
+                <img src="./images/bad_bunny.jpg" alt="ANDREA" />
+                <span id="erase1" onclick="eraseSong(1)">x</span>
+                <p>ANDREA</p></div>
+                <div id="drag9" class="song" data-path="./audio/candy.mp3" draggable="true" ondragstart="drag(event)">
+                  <p>ROSALÍA</p>
+                  <img src="./images/candy.jpg" alt="CANDY" />
+                  <span id="erase2" onclick="eraseSong(2)">x</span>
+                  <p>CANDY</p></div>
+                  <div id="drag10" class="song" data-path="./audio/32barrasdeterror.mp3" draggable="true" ondragstart="drag(event)">
+                    <p>PEPE ASTRO</p>
+                    <img src="./images/pepeastro.jpg" alt="32BARRASDETERROR" />
+                    <span id="erase3" onclick="eraseSong(3)">x</span>
+                    <p>32BARRAS</p></div>
+                  
+            </div>
+            <p>Crea mas listas <a href="./biblioteca.html">aquí</a></p>
           </div>
           <div class="profile-section">
             <h1 class="profile-titles">LISTAS DE TUS SEGUIDOS</h1>
+            <p>Temazos</p>
+            <div class="profile-song-container">
+              <div class="song">
+                <p>THE BEATLES</p>
+                <img src="./images/beatles.jpg" alt="BEATLES" />
+                <p>HERE COMES THE SUN</p>
+              </div>
+              <div class="song">
+                <p>DIRE STRAITS</p>
+                <img src="./images/swing.jpg" alt="SULTANS" />
+                <p>SULTANS OF SWING</p>
           </div>
+        </article>
       </main>
+      <script type="text/javascript" src="./js/like.js"></script>
+      <script type="text/javascript" src="./js/draggable.js"></script>
     </body>
   </head>
 </html>

@@ -170,7 +170,6 @@ html {
   margin-top: 3%;
 }
 
-/* modal */
 .modal-container {
   position: fixed;
   top: 30%;
@@ -181,14 +180,9 @@ html {
   width: 100%;
   height: 30%;
 
-  /* --m-background is set as inline style */
   background: linear-gradient(to right, hsl(210, 30%, 20%), hsl(255, 30%, 25%))
 }
 
-/* using :target */
-/*
-when users will click/enter button(link) browser will add a #id in a url and when that happens we'll show our users the modal that contains that id.
-*/
 .modal-container:target {
   display: flex;
 }
@@ -245,7 +239,6 @@ when users will click/enter button(link) browser will add a #id in a url and whe
   transform: translateY(-.2rem);
 }
 
-/* link-... */
 .link-2 {
   width: 4rem;
   height: 4rem;

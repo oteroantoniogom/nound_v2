@@ -18,12 +18,12 @@
   <!--linkea el archivo html con el css-->
   <link rel="stylesheet" href="./css/changing/mobile.css" />
   <link rel="stylesheet" href="./css/changing/tablet.css" media="Screen and (min-width: 600px)" />
-  <link rel="stylesheet" href="./css/changing/" media="screen and (min-width: 769px)" />
+  <link rel="stylesheet" href="./css/changing/desktop.css" media="screen and (min-width: 769px)" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<body class="container">
+<body class="container" onload=showCookie()>
 
 
   <!--CABECERA-->
@@ -117,8 +117,6 @@
 
       <div clas="container_form">
         <form id="formRegister" onsubmit=checkCookie2()>
-          <button type="submit_google">Registrarse con Google</button>
-          <button type="submit_facebook">Registrarse con Facebook</button>
 
           <p>Informacion de la cuenta</p>
 

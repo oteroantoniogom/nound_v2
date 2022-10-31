@@ -38,3 +38,9 @@ function addPlaylist(){
     var songs_clone = songs.cloneNode(true);
     list.appendChild(songs_clone);
 }
+
+function eraseSong(index){
+    var playlist = document.getElementById("showList");
+    var x = document.getElementById("erase"+ index)
+    playlist.removeChild(x.parentElement)
+}
