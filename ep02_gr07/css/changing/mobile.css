@@ -304,10 +304,16 @@ when users will click/enter button(link) browser will add a #id in a url and whe
   width: 2vw;
 }
 
-.opciones a, .aside-extra a {
+.opciones a {
   color: white;
   text-decoration: none;
   font-size: 1.55vw;
+}
+
+.aside-extra a{
+  color: white;
+  text-decoration: none;
+  font-size: 1vw;
 }
 
 .opciones a:hover, .aside-extra a:hover {

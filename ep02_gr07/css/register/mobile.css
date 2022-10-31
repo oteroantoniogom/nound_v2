@@ -89,10 +89,16 @@ html {
   width: 2vw;
 }
 
-.opciones a, .aside-extra a {
+.opciones a {
   color: white;
   text-decoration: none;
   font-size: 1.55vw;
+}
+
+.aside-extra a{
+  color: white;
+  text-decoration: none;
+  font-size: 1vw;
 }
 
 .opciones a:hover, .aside-extra a:hover {

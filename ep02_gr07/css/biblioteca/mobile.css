@@ -57,9 +57,10 @@ html {
     rgb(157, 31, 134)
   );
   width: 100%;
-  height: auto;
+  height: 90vh;
   padding-bottom: 10%;
   overflow-x: hidden;
+  overflow-y: visible;
   margin-top: 3%;
 }
 
@@ -89,12 +90,17 @@ html {
   width: 2vw;
 }
 
-.opciones a, .aside-extra a {
+.opciones a {
   color: white;
   text-decoration: none;
   font-size: 1.55vw;
 }
 
+.aside-extra a{
+  color: white;
+  text-decoration: none;
+  font-size: 1vw;
+}
 .opciones a:hover, .aside-extra a:hover {
   color: rgb(156, 241, 169);
 }
@@ -113,9 +119,76 @@ html {
   width: 100%;
   height: auto;
   margin-bottom: 30%;
-  margin-top: 205px;
-  padding: 5% 20%;
+  margin-top: 170px;
   font-size: 3vw;
   text-align: center;
   
+}
+
+#playlist-list {
+  margin-top: 5%;
+  font-size: 1.5vw;
+  display:block
+}
+
+#newlist {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  display: none;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.song {
+  width: 25vmin;
+  height: 50%;
+  margin-bottom: 3%;
+}
+
+.song p{
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  font-size: 50%;
+}
+
+.song img {
+  width: 15vmin;
+  height: 15vmin;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+#list-title {
+  margin-top: 8%;
+}
+#showList-container {
+  width: 100%;
+  height:100%;
+  border: 3px dashed white;
+  display: flex;
+  font-size: 50%;
+}
+
+#showList-container input{
+  height: 3vmin;
+  margin: 4%;
+}
+
+#newplaylist, #createlist {
+  width: 40%;  padding: 1%;
+  cursor:pointer;
+  background-color: #31244f;
+  color: white;
+  margin-top: 5%;
+}
+
+#closelist {
+  width: 40%;
+  padding: 1%;
+  cursor:pointer;
+  background-color: red;
+  color: white;
+  margin-top: 5%;
 }

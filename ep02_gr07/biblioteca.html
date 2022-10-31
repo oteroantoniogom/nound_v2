@@ -84,8 +84,74 @@
 
         <!--CONTENIDO PRINCIPAL-->
 
-        <article class="article"></article>
+        <article class="article">
+          <div> TUS LISTAS</div>
+            <div id="playlist-list"></div>
+          
+          <button id="newplaylist" onclick="newPlaylist()">Nueva playlist</button>
+
+          <div id="newlist" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="drag1" class="song" data-path="./audio/mejormanana.mp3" draggable="true" ondragstart="drag(event)">
+              <p>PABLOPA TODO</p>
+              <img src="./images/artist_photo.jpg" alt="MEJOR MAÑANA" />
+              <p>MEJOR MAÑANA</p></div>
+            <div id="drag2" class="song" data-path="./audio/fireflies.mp3" draggable="true" ondragstart="drag(event)">
+              <p>OWL CITY</p>
+              <img src="./images/fireflies.jpg" alt="FIREFLIES" />
+              <p>FIREFLIES</p></div>
+            <div id="drag3" class="song" data-path="./audio/billiejean.mp3" draggable="true" ondragstart="drag(event)">
+              <p>M. JACKSON</p>
+              <img src="./images/jackson.jpg" alt="BILLIE JEAN" />
+              <p>BILLIE JEAN</p></div>
+            <div id="drag4" class="song" data-path="./audio/vivalavda.mp3" draggable="true" ondragstart="drag(event)">
+              <p>COLDPLAY</p>
+              <img src="./images/coldplay.jpg" alt="VIVA LA VIDA" />
+              <p>VIVA LA VIDA</p></div>
+            <div id="drag5" class="song" data-path="./audio/thesun.mp3" draggable="true" ondragstart="drag(event)">
+              <p>THE BEATLES</p>
+              <img src="./images/beatles.jpg" alt="HERE COMES THE SUN" />
+              <p>HERE COMES THE SUN</p></div>
+            <div id="drag6" class="song" data-path="./audio/sultansofswing.mp3" draggable="true" ondragstart="drag(event)">
+              <p>DIRE STRAITS</p>
+              <img src="./images/swing.jpg" alt="SULTANS OF SWING" />
+              <p>SULTANS OF SWING</p></div>
+            <div id="drag7" class="song" data-path="./audio/secrets.mp3" draggable="true" ondragstart="drag(event)">
+              <p>ONE REPUBLIC</p>
+              <img src="./images/onerepublic.jpg" alt="SECRETS" />
+              <p>SECRETS</p></div>
+            <div id="drag8" class="song" data-path="./audio/andrea.mp3" draggable="true" ondragstart="drag(event)">
+              <p>BAD BUNNY</p>
+              <img src="./images/bad_bunny.jpg" alt="ANDREA" />
+              <p>ANDREA</p></div>
+            <div id="drag9" class="song" data-path="./audio/candy.mp3" draggable="true" ondragstart="drag(event)">
+              <p>ROSALÍA</p>
+              <img src="./images/candy.jpg" alt="CANDY" />
+              <p>CANDY</p></div>
+            <div id="drag10" class="song" data-path="./audio/32barrasdeterror.mp3" draggable="true" ondragstart="drag(event)">
+              <p>PEPE ASTRO</p>
+              <img src="./images/pepeastro.jpg" alt="32BARRASDETERROR" />
+              <p>32BARRAS</p></div>
+          
+            <p id="list-title">Arrastre las canciones aquí</p>
+            <div id="list-name-container"></div>
+              <div id="showList-container">
+                <div id="showList" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="input">
+                  <input id="nombre"
+                    type="text"
+                    placeholder="Nombre de la lista"
+                    name="playlist-name"
+                    required
+                />
+                </div>
+              </div>
+            <button id="createlist" onclick="addPlaylist()">Crear playlist</button>
+            <button id="closelist" onclick="closeList()">Cerrar</button>
+          </div>
+
+        </article>
       </main>
+      <script type="text/javascript" src="./js/draggable.js"></script>
     </body>
   </head>
 </html>
